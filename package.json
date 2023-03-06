@@ -10,6 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.17"
+    "@astrojs/react": "^2.0.2",
+    "@astrojs/tailwind": "^3.0.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "astro": "^2.0.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.7"
   }
 }
