@@ -1,41 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+
+import Title 	from '../components/Title.jsx';
+import Navbar from '../components/Navbar.jsx';
+import Divider from '../components/Divider.jsx';
+import CardArticle from '../components/templates/CardArticle.jsx';
+
+import '../styles/init.css';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+<Layout title="Tiny Visions - Landing Page">
+	<main class="bg-palette-c-dark text-palette-c-light">
+		<Navbar/>
+
+		<Divider/>
+		<Title/>
+
+		<Divider/>
+		<CardArticle
+			title="Test"
+			link="/test"
+			reverse={true}/>
+
+		<Divider/>
+		<CardArticle
+			title="Readings"
+			link="/readings"/>
+
+		<Divider/>
+		<CardArticle
+			title="Tarots"
+			link="/tarots"
+			reverse={true}/>
+		
+		<Divider/>
+
+		<div class="p-16"/>
+
 	</main>
 </Layout>
 
-<style>
+<!-- <style>
 	main {
 		margin: auto;
 		padding: 1.5rem;
@@ -78,4 +83,4 @@ import Card from '../components/Card.astro';
 		gap: 1rem;
 		padding: 0;
 	}
-</style>
+</style> -->
