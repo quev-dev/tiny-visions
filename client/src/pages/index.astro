@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-import Title 	from '../components/Title.jsx';
+import Title from '../components/Title.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Divider from '../components/Divider.jsx';
 import CardArticle from '../components/templates/CardArticle.jsx';
@@ -9,35 +9,26 @@ import CardArticle from '../components/templates/CardArticle.jsx';
 import '../styles/init.css';
 ---
 
-<Layout title="Tiny Visions - Landing Page">
-	<main class="bg-palette-c-dark text-palette-c-light">
-		<Navbar/>
+<Layout title='Tiny Visions - Landing Page'>
+  <main class='bg-palette-c-dark text-palette-c-light'>
+    <Navbar />
 
-		<Divider/>
-		<Title/>
+    <Divider />
+    <Title />
 
-		<Divider/>
-		<CardArticle
-			title="Test"
-			link="/test"
-			reverse={true}/>
+    <Divider />
+    <CardArticle title='Test' link='/test' reverse={true} />
 
-		<Divider/>
-		<CardArticle
-			title="Readings"
-			link="/readings"/>
+    <Divider />
+    <CardArticle title='Readings' link='/readings' />
 
-		<Divider/>
-		<CardArticle
-			title="Tarots"
-			link="/tarots"
-			reverse={true}/>
-		
-		<Divider/>
+    <Divider />
+    <CardArticle title='Tarots' link='/tarots' reverse={true} />
 
-		<div class="p-16"/>
+    <Divider />
 
-	</main>
+    <div class='p-16'></div>
+  </main>
 </Layout>
 
 <!-- <style>
