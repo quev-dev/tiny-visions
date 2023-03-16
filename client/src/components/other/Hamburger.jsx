@@ -1,12 +1,12 @@
-export default function Hamburger() {
+export default function Hamburger({ color = 'palette-c-accent' }) {
   return (
     <div className='flex items-center justify-center'>
-      <button className='text-white focus:outline-none'>
+      <div className={`text-${color} focus:outline-none`}>
         <svg
-          className='h-6 w-6'
+          className={`h-6 w-6 text-${color}`}
           fill='none'
           viewBox='0 0 24 24'
-          stroke='currentColor'
+          stroke={`currentColor`}
         >
           <path
             strokeLinecap='round'
@@ -15,7 +15,7 @@ export default function Hamburger() {
             d='M4 6h16M4 12h16M4 18h16'
           />
         </svg>
-      </button>
+      </div>
     </div>
   );
 }
