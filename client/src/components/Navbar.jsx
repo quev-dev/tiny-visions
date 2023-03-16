@@ -7,8 +7,27 @@ export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <nav className='sticky top-0 bg-palette-c-dark text-palette-c-light z-50'>
-      <ul className='flex justify-between items-center py-8 px-16'>
+    <nav className='sticky top-0 bg-palette-c-dark text-palette-c-light z-30'>
+      {/* Mobile */}
+      <ul className='flex md:hidden justify-between items-center py-4 px-4'>
+        <li className='font-bold mr-auto text-palette-c-accent'>
+          <Logo />
+          Tiny Visions
+        </li>
+
+        <button onClick={() => setShowDropdown(!showDropdown)}>
+          <Hamburger />
+        </button>
+
+        {showDropdown && (
+          <div className='sticky top-10'>
+            <p>Hello</p>
+          </div>
+        )}
+      </ul>
+
+      {/* Desktop */}
+      <ul className='hidden md:flex justify-between items-center py-8 px-16'>
         <li className='font-bold mr-auto text-palette-c-accent'>
           <Logo />
           Tiny Visions
