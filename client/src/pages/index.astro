@@ -5,6 +5,7 @@ import Title from '../components/Title.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Divider from '../components/Divider.jsx';
 import CardArticle from '../components/templates/CardArticle.jsx';
+import CardArticleReverse from '../components/templates/CardArticleReverse.jsx';
 
 import '../styles/init.css';
 ---
@@ -17,13 +18,13 @@ import '../styles/init.css';
     <Title />
 
     <Divider />
-    <CardArticle title='Test' link='/test' reverse={true} />
+    <CardArticleReverse title='Test' link='/test' />
 
     <Divider />
     <CardArticle title='Readings' link='/readings' />
 
     <Divider />
-    <CardArticle title='Tarots' link='/tarots' reverse={true} />
+    <CardArticleReverse title='Tarots' link='/tarots' />
 
     <Divider />
 

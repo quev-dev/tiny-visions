@@ -10,6 +10,7 @@ module.exports = {
           'c-mid': '#474658',
           'c-light': '#EEEEEE',
           'c-accent': '#F4387C',
+          'c-input': '#333240',
         },
       },
     },

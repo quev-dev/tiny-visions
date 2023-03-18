@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+
+import '../styles/init.css';
+---
+
+<Layout title='Tiny Visions - Page Not Found'>
+  <main class='mx-4 bg-palette-c-dark text-palette-c-light flex flex-col items-center justify-center h-screen'>
+    <header class="bg-palette-c-input px-8 py-12 w-full md:w-1/2">
+      <h2 class="text-2xl font-bold text-palette-c-accent">404</h2>
+      <p>The page you're looking for does not exist.</p>
+    </header>
+    <footer class="bg-palette-c-darker px-8 py-4 w-full md:w-1/2">
+      <a href="/" class="text-palette-c-accent">Return to main page</a>
+    </footer>
+  </main>
+</Layout>

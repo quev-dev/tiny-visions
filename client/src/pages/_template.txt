@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.jsx';
+
+import '../styles/init.css';
+---
+
+<Layout title='Tiny Visions - Landing Page'>
+  <main class='bg-palette-c-dark text-palette-c-light'>
+    <Navbar client:load />
+
+  </main>
+</Layout>
