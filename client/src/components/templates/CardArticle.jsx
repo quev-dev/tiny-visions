@@ -1,4 +1,4 @@
-import CardPlaceholder from '../../components/templates/CardPlaceholder.jsx';
+import ImgPlaceholder from '../../components/templates/ImgPlaceholder.jsx';
 import cardMoon from '../../content/images/cardMoon.png';
 
 export default function CardArticle({
@@ -19,7 +19,7 @@ export default function CardArticle({
       </section>
       <section className='relative'>
         <a href={link}>
-          <CardPlaceholder></CardPlaceholder>
+          <ImgPlaceholder></ImgPlaceholder>
           <p className='absolute z-10 bottom-4 text-center bg-opacity-70 w-full'>
             {title}
           </p>
