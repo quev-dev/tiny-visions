@@ -10,17 +10,17 @@ export default function CardArticle({
 }) {
   return (
     <article
-      className={`flex flex-col ${
-        reverse ? 'md:flex-row-reverse' : 'md:flex-row'
-      } my-16 gap-12 justify-center items-center mx-auto max-w-xs md:max-w-screen-sm lg:max-w-screen-md`}
+      className={`flex flex-col 
+      ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
+      my-16 gap-24 justify-center items-center px-4 sm:px-12 sm:text-2xl`}
     >
-      <section className='md:w-8/12'>
+      <section className='max-w-2xl'>
         <p>{description}</p>
       </section>
-      <section className='relative w-3/5 md:w-4/12'>
+      <section className='relative'>
         <a href={link}>
           <CardPlaceholder></CardPlaceholder>
-          <p className='absolute z-10 bottom-4 w-full text-center bg-opacity-70'>
+          <p className='absolute z-10 bottom-4 text-center bg-opacity-70 w-full'>
             {title}
           </p>
         </a>
