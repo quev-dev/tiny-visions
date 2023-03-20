@@ -7,7 +7,7 @@ export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <nav className='sticky top-0 relative bg-palette-c-dark text-palette-c-light z-30'>
+    <nav className='sticky top-0 bg-palette-c-dark text-palette-c-light z-30'>
       {/* Mobile */}
       <ul className='flex md:hidden justify-between items-center py-4 px-4'>
         <li className='font-bold mr-auto text-palette-c-accent'>
