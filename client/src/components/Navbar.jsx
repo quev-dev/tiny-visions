@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className='text-palette-c-accent bg-palette-c-dark w-full absolute text-right right-0 top-12 pb-4 px-4'>
             <ul className='flex flex-col gap-1'>
               <li>
-                <a href='/test'>Test</a>
+                <a href='/quiz'>Test</a>
               </li>
               <li>
                 <a href='/readings'>Readings</a>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
         <ul className='flex gap-8 mr-16'>
           <li>
-            <a href='/test'>Test</a>
+            <a href='/quiz'>Test</a>
           </li>
           <li>
             <a href='/readings'>Readings</a>

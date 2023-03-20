@@ -1,0 +1,35 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.jsx';
+import Divider from '../../components/Divider.jsx';
+
+import CardPlaceholder from '../../components/templates/CardPlaceholder';
+
+import '../../styles/init.css';
+---
+
+<Layout title='Tiny Visions - Landing Page'>
+  <Navbar client:load />
+  <main class='bg-palette-c-dark text-palette-c-light sm:text-2xl'>
+    <Divider/>
+    <header class='flex flex-col items-center justify-center m-4'>
+      <h2 class='text-2xl sm:text-4xl text-center font-bold text-palette-c-accent'>One Card Reading</h2>
+      <p class='md:w-1/2 m-8 sm:text-2xl text-left'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget nullam non. Blandit aliquam etiam erat velit scelerisque in dictum. At urna condimentum mattis pellentesque id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+      </p>
+    </header>
+    <Divider/>
+
+    <section class='flex flex-col gap-4 m-12 items-center justify-center'>
+      <CardPlaceholder/>
+      <p class='text-center mb-6'>Tarot</p>
+      <p class='md:w-1/2'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Consectetur libero id faucibus nisl tincidunt eget nullam non. Blandit aliquam etiam erat velit scelerisque in dictum. At urna condimentum mattis pellentesque id. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+      </p>
+    </section>
+    <Divider/>
+
+    <div class='mb-12'></div>
+
+  </main>
+</Layout>

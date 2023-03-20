@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
+import Divider from '../components/Divider.jsx';
 
 import '../styles/init.css';
 ---
