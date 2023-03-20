@@ -6,9 +6,14 @@ export default function CardArticle({
   title = 'title',
   link = '/',
   description = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur molestias ipsa sed soluta vitae asperiores nulla porro, corrupti praesentium quam nemo eum enim, optio voluptatum non quaerat reiciendis libero similique!',
+  reverse = false,
 }) {
   return (
-    <article className='flex flex-col md:flex-row my-16 gap-12 justify-center items-center mx-auto max-w-xs md:max-w-screen-sm lg:max-w-screen-md'>
+    <article
+      className={`flex flex-col ${
+        reverse ? 'md:flex-row-reverse' : 'md:flex-row'
+      } my-16 gap-12 justify-center items-center mx-auto max-w-xs md:max-w-screen-sm lg:max-w-screen-md`}
+    >
       <section className='md:w-8/12'>
         <p>{description}</p>
       </section>
