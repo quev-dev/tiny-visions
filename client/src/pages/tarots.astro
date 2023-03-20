@@ -1,11 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
+import Divider from '../components/Divider';
 
 import '../styles/init.css';
+import TarotCard from '../components/TarotCard';
+
+const cards = new Array(22).fill(0)
 ---
 
 <Layout title='Tiny Visions - Tarots'>
   <Navbar client:load />
-  <main class='bg-palette-c-dark text-palette-c-light'></main>
+  <Divider />
+  <main
+    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
+  >
+    <header class='my-12 max-w-4xl mx-auto'>
+      <h2
+        class='text-center text-2xl sm:text-4xl mb-16 font-bold text-palette-c-accent'
+      >
+        Major Arcana
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Consectetur libero
+        id faucibus nisl tincidunt eget nullam non. Blandit aliquam etiam erat
+        velit scelerisque in dictum. At urna condimentum mattis pellentesque id.
+        Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+      </p>
+    </header>
+    <Divider />
+    <section class='tarot-grid text-center grid max-w-6xl gap-12 mx-auto my-16'>
+      {cards.map(card => <TarotCard />)}
+    </section>
+    <Divider />
+  </main>
 </Layout>
