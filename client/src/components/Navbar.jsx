@@ -1,10 +1,19 @@
 import Logo from './Logo';
 import Hamburger from './other/Hamburger';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [currentPage, setCurrentPage] = useState('');
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    const regex = /^\/([^/]+)/;
+    const match = regex.exec(path);
+    setCurrentPage(match ? match[0] : '');
+    // setCurrentPage(window.location.pathname);
+  }, []);
 
   return (
     <nav className='sticky top-0 bg-palette-c-dark text-palette-c-light z-30'>
@@ -52,17 +61,37 @@ export default function Navbar() {
 
         <ul className='flex gap-8 mr-16'>
           <li>
-            <a href='/quiz'>Test</a>
+            {currentPage === '/quiz' && (
+              <a className='text-palette-c-accent' href='/quiz'>
+                Test
+              </a>
+            )}
+            {currentPage !== '/quiz' && <a href='/quiz'>Test</a>}
           </li>
           <li>
-            <a href='/readings'>Readings</a>
+            {currentPage === '/readings' && (
+              <a className='text-palette-c-accent' href='/readings'>
+                Readings
+              </a>
+            )}
+            {currentPage !== '/readings' && <a href='/readings'>Readings</a>}
           </li>
           <li>
-            <a href='/tarots'>Tarots</a>
+            {currentPage === '/tarots' && (
+              <a className='text-palette-c-accent' href='/tarots'>
+                Tarots
+              </a>
+            )}
+            {currentPage !== '/tarots' && <a href='/tarots'>Tarots</a>}
           </li>
         </ul>
         <li>
-          <a href='/login'>Login</a>
+          {currentPage === '/login' && (
+            <a className='text-palette-c-accent' href='/login'>
+              Login
+            </a>
+          )}
+          {currentPage !== '/login' && <a href='/login'>Login</a>}
         </li>
       </ul>
     </nav>
