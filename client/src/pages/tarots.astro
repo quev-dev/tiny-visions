@@ -5,9 +5,8 @@ import Divider from '../components/Divider';
 
 import '../styles/init.css';
 import TarotCard from '../components/TarotCard';
-import TarotModal from '../components/TarotModal';
 
-const cards = new Array(22).fill(0);
+const cards = new Array(22).fill(0)
 ---
 
 <Layout title='Tiny Visions - Tarots'>
@@ -32,9 +31,8 @@ const cards = new Array(22).fill(0);
     </header>
     <Divider />
     <section class='tarot-grid text-center grid max-w-6xl gap-12 mx-auto my-16'>
-      {cards.map((card) => <TarotCard client:load />)}
+      {cards.map(card => <TarotCard />)}
     </section>
     <Divider />
   </main>
-  <TarotModal client:load />
 </Layout>

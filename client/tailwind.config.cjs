@@ -7,7 +7,6 @@ module.exports = {
         palette: {
           'c-darker': '#1c1b22',
           'c-dark': '#282732',
-          'c-semidark': '#2a2938',
           'c-mid': '#474658',
           'c-light': '#EEEEEE',
           'c-accent': '#F4387C',
