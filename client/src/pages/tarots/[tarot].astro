@@ -1,0 +1,79 @@
+---
+import Divider from '../../components/Divider';
+import Navbar from '../../components/Navbar';
+import CardPlaceholder from '../../components/templates/CardPlaceholder';
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return [{ params: { tarot: 'The Fool' } }];
+}
+
+const { tarot } = Astro.params;
+---
+
+<!-- <aside
+  class='fixed inset-0 bg-palette-c-dark z-40 flex items-center justify-center'
+  role='dialog'
+>
+  <div
+    class='my-12 max-w-4xl sm:text-2xl flex items-center justify-center gap-12'
+  >
+    <section>
+      <Divider />
+      <h2
+        class='text-center text-2xl sm:text-4xl font-bold text-palette-c-accent my-6'
+      >
+        Tarot Card
+      </h2>
+      <p class='text-center'>
+        <span class='text-palette-c-accent'>Keywords:</span> asf, fdsf, sg
+      </p>
+      <p class='text-center mb-16'>
+        <span class='text-palette-c-accent'>Reversed:</span> sg, fdsf, asf
+      </p>
+      <p class='mb-6'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Consectetur libero
+        id faucibus nisl tincidunt eget nullam non. Blandit aliquam etiam erat
+        velit scelerisque in dictum. At urna condimentum mattis pellentesque id.
+        Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+      </p>
+      <Divider />
+    </section>
+    <section>
+      <CardPlaceholder />
+    </section>
+  </div>
+</aside> -->
+<Layout title='Tiny Visions - Tarots'>
+  <Navbar client:load />
+  <main
+    class='bg-palette-c-dark text-palette-c-light justify-center items-center sm:text-2xl px-4 sm:px-8 mb-24 flex gap-12'
+  >
+    <header class='my-12 max-w-4xl'>
+      <Divider />
+      <h2
+        class='text-center text-2xl sm:text-4xl mb-16 mt-6 font-bold text-palette-c-accent'
+      >
+        {tarot}
+      </h2>
+      <p class='text-center'>
+        <span class='text-palette-c-accent'>Keywords:</span> asf, fdsf, sg
+      </p>
+      <p class='text-center mb-16'>
+        <span class='text-palette-c-accent'>Reversed:</span> sg, fdsf, asf
+      </p>
+      <p class="mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Consectetur libero
+        id faucibus nisl tincidunt eget nullam non. Blandit aliquam etiam erat
+        velit scelerisque in dictum. At urna condimentum mattis pellentesque id.
+        Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+      </p>
+      <Divider />
+    </header>
+    <section>
+      <CardPlaceholder />
+    </section>
+  </main>
+</Layout>
