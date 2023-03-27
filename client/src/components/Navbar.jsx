@@ -1,9 +1,8 @@
 import Logo from './Logo';
 import Hamburger from './other/Hamburger';
-
 import { useState } from 'react';
 
-export default function Navbar() {
+export default function Navbar({ activeLink = '' }) {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
@@ -25,17 +24,41 @@ export default function Navbar() {
           <div className='text-palette-c-accent bg-palette-c-dark w-full absolute text-right right-0 top-12 pb-4 px-4'>
             <ul className='flex flex-col gap-1'>
               <li>
-                <a href='/quiz'>Test</a>
+                {activeLink === 'quiz' ? (
+                  <a href='/quiz' className='text-palette-c-accent'>
+                    Test
+                  </a>
+                ) : (
+                  <a href='/quiz'>Test</a>
+                )}
               </li>
               <li>
-                <a href='/readings'>Readings</a>
+                {activeLink === 'readings' ? (
+                  <a href='/readings' className='text-palette-c-accent'>
+                    Readings
+                  </a>
+                ) : (
+                  <a href='/readings'>Readings</a>
+                )}
               </li>
               <li>
-                <a href='/tarots'>Tarots</a>
+                {activeLink === 'tarots' ? (
+                  <a href='/tarots' className='text-palette-c-accent'>
+                    Tarots
+                  </a>
+                ) : (
+                  <a href='/tarots'>Tarots</a>
+                )}
               </li>
             </ul>
             <li>
-              <a href='/login'>Login</a>
+              {activeLink === 'login' ? (
+                <a href='/login' className='text-palette-c-accent'>
+                  Login
+                </a>
+              ) : (
+                <a href='/login'>Login</a>
+              )}
             </li>
           </div>
         )}
@@ -52,17 +75,41 @@ export default function Navbar() {
 
         <ul className='flex gap-8 mr-16'>
           <li>
-            <a href='/quiz'>Test</a>
+            {activeLink === 'quiz' ? (
+              <a href='/quiz' className='text-palette-c-accent'>
+                Test
+              </a>
+            ) : (
+              <a href='/quiz'>Test</a>
+            )}
           </li>
           <li>
-            <a href='/readings'>Readings</a>
+            {activeLink === 'readings' ? (
+              <a href='/readings' className='text-palette-c-accent'>
+                Readings
+              </a>
+            ) : (
+              <a href='/readings'>Readings</a>
+            )}
           </li>
           <li>
-            <a href='/tarots'>Tarots</a>
+            {activeLink === 'tarots' ? (
+              <a href='/tarots' className='text-palette-c-accent'>
+                Tarots
+              </a>
+            ) : (
+              <a href='/tarots'>Tarots</a>
+            )}
           </li>
         </ul>
         <li>
-          <a href='/login'>Login</a>
+          {activeLink === 'login' ? (
+            <a href='/login' className='text-palette-c-accent'>
+              Login
+            </a>
+          ) : (
+            <a href='/login'>Login</a>
+          )}
         </li>
       </ul>
     </nav>
