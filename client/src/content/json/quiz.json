@@ -1,0 +1,58 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "question": "The sweltering sun beats down onto you as you trek through the barren wasteland. A lizard scurries across your path; politely requesting a sip of water.",
+      "options": [
+        {
+          "text": "Continue onward and save your resources.",
+          "attributes": {}
+        },
+        {
+          "text": "Provide it with a sip from your canteen.",
+          "attributes": {}
+        },
+        {
+          "text": "Offer it to travel alongside you.",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "question": "",
+      "options": [
+        {
+          "text": "",
+          "attributes": {}
+        },
+        {
+          "text": "",
+          "attributes": {}
+        },
+        {
+          "text": "",
+          "attributes": {}
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "",
+      "options": [
+        {
+          "text": "",
+          "attributes": {}
+        },
+        {
+          "text": "",
+          "attributes": {}
+        },
+        {
+          "text": "",
+          "attributes": {}
+        }
+      ]
+    }
+  ]
+}
