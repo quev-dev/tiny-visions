@@ -36,34 +36,57 @@
       "options": [
         {
           "answer": "Continue onward and save your resources.",
-          "score": {}
+          "score": {
+            "hermit": 1,
+            "strength": 2,
+            "tower": 3
+          }
         },
         {
           "answer": "Provide it with a sip from your canteen.",
-          "score": {}
+          "score": {
+            "temperance": 1,
+            "chariot": 2,
+            "hermit": 3
+          }
         },
         {
           "answer": "Offer it to travel alongside you.",
-          "score": {}
+          "score": {
+            "hanged man": 1,
+            "lovers": 2,
+            "emperor": 3
+          }
         }
       ]
     },
-
     {
       "id": 2,
       "question": "Hiking through the chilly mountains in the cold afternoon, you encounter a delicate village. The villagers welcome you with kindness, inviting you to rest and stay the night.",
       "options": [
         {
           "answer": "Accept their invitation, spending the night in one of their rooms.",
-          "score": {}
+          "score": {
+            "lovers": 3,
+            "temperance": 2,
+            "hermit": 1
+          }
         },
         {
           "answer": "Decline their invitation; they may be dangerous.",
-          "score": {}
+          "score": {
+            "hanged-man": 3,
+            "tower": 2,
+            "devil": 1
+          }
         },
         {
           "answer": "Offer to share dinner with them, so that you may become acquainted before making a decision.",
-          "score": {}
+          "score": {
+            "chariot": 3,
+            "justice": 2,
+            "hermit": 1
+          }
         }
       ]
     },
@@ -73,15 +96,27 @@
       "options": [
         {
           "answer": "Bring the pouch to the authorities.",
-          "score": {}
+          "score": {
+            "justice": 3,
+            "temperance": 2,
+            "hermit": 1
+          }
         },
         {
           "answer": "Search for the owner, so that you may return it personally.",
-          "score": {}
+          "score": {
+            "justice": 2,
+            "judgement": 3,
+            "hermit": 1
+          }
         },
         {
           "answer": "Keep the pouch and head to purchase an antidote.",
-          "score": {}
+          "score": {
+            "tower": 3,
+            "death": 1,
+            "chariot": 2
+          }
         }
       ]
     },
@@ -91,15 +126,27 @@
       "options": [
         {
           "answer": "Confront your friend.",
-          "score": {}
+          "score": {
+            "strength": 3,
+            "justice": 2,
+            "temperance": 1
+          }
         },
         {
           "answer": "Cut ties with your friend.",
-          "score": {}
+          "score": {
+            "hermit": 3,
+            "tower": 2,
+            "death": 1
+          }
         },
         {
-          "answer": "Sabatoge your friend's image in retaliation.",
-          "score": {}
+          "answer": "Sabotage your friend's image in retaliation.",
+          "score": {
+            "devil": 3,
+            "tower": 2,
+            "judgement": 1
+          }
         }
       ]
     },
@@ -109,15 +156,27 @@
       "options": [
         {
           "answer": "Disregard the circle and sneak past it, using the tall trees for cover.",
-          "score": {}
+          "score": {
+            "hermit": 1,
+            "hanged man": 2,
+            "moon": 3
+          }
         },
         {
           "answer": "Find a spot to stay nearby, studying what you presume is a ritual.",
-          "score": {}
+          "score": {
+            "high priestess": 1,
+            "temperance": 2,
+            "judgement": 3
+          }
         },
         {
           "answer": "Create a noise distraction some space away with the hopes of edging closer to investigate.",
-          "score": {}
+          "score": {
+            "fool": 1,
+            "magician": 2,
+            "the world": 3
+          }
         }
       ]
     },
@@ -127,15 +186,27 @@
       "options": [
         {
           "answer": "Investigate the cave with the hopes of finding new island resources.",
-          "score": {}
+          "score": {
+            "the-fool": 1,
+            "the-hanged-man": 2,
+            "the-hermit": 3
+          }
         },
         {
           "answer": "Ignore the cave and carve a message into the shore sand with a stick, hoping to catch the attention of passing ships.",
-          "score": {}
+          "score": {
+            "the-hermit": 1,
+            "the-fool": 2,
+            "the-hanged-man": 3
+          }
         },
         {
           "answer": "Exit the cave, instead focusing on collecting food and creating shelter.",
-          "score": {}
+          "score": {
+            "the-hermit": 1,
+            "the-fool": 2,
+            "the-hanged-man": 3
+          }
         }
       ]
     },
@@ -145,15 +216,27 @@
       "options": [
         {
           "answer": "Head back into the closest town, in search of a rescue team.",
-          "score": {}
+          "score": {
+            "temperance": 1,
+            "justice": 2,
+            "chariot": 3
+          }
         },
         {
           "answer": "Attempt to push the whale back into the water on your own.",
-          "score": {}
+          "score": {
+            "hermit": 1,
+            "strength": 2,
+            "chariot": 3
+          }
         },
         {
           "answer": "Leave the whale behind, letting nature take its course.",
-          "score": {}
+          "score": {
+            "death": 1,
+            "tower": 2,
+            "hermit": 3
+          }
         }
       ]
     },
@@ -163,15 +246,27 @@
       "options": [
         {
           "answer": "Follow the noise with the hopes of finding an exit route.",
-          "score": {}
+          "score": {
+            "fool": 1,
+            "hanged man": 2,
+            "hermit": 3
+          }
         },
         {
           "answer": "Stand still, letting the echoes pass by before continuing to climb through the tunnels.",
-          "score": {}
+          "score": {
+            "justice": 1,
+            "strength": 2,
+            "temperance": 3
+          }
         },
         {
           "answer": "Call out for help, hoping to be heard by one of the exploration members.",
-          "score": {}
+          "score": {
+            "chariot": 1,
+            "tower": 2,
+            "judgement": 3
+          }
         }
       ]
     },
@@ -181,15 +276,27 @@
       "options": [
         {
           "answer": "Knock at the wooden door of the cottage, hoping for help.",
-          "score": {}
+          "score": {
+            "hermit": 3,
+            "emperor": 2,
+            "chariot": 1
+          }
         },
         {
           "answer": "Ignore the cottage and continue your trek through the forest.",
-          "score": {}
+          "score": {
+            "fool": 3,
+            "tower": 2,
+            "death": 1
+          }
         },
         {
           "answer": "Take the time to spy on the cottage until you arrive at a conclusion.",
-          "score": {}
+          "score": {
+            "justice": 3,
+            "moon": 2,
+            "temperance": 1
+          }
         }
       ]
     },
@@ -199,15 +306,27 @@
       "options": [
         {
           "answer": "Offer them a helping hand, providing whatever resources you have.",
-          "score": {}
+          "score": {
+            "chariot": 3,
+            "temperance": 2,
+            "justice": 1
+          }
         },
         {
           "answer": "Remain cautious and continue on your own path.",
-          "score": {}
+          "score": {
+            "hermit": 3,
+            "justice": 2,
+            "death": 1
+          }
         },
         {
           "answer": "Observe from a distance, analyzing their intentions before making a decision.",
-          "score": {}
+          "score": {
+            "judgement": 3,
+            "tower": 2,
+            "hermit": 1
+          }
         }
       ]
     },
@@ -217,15 +336,27 @@
       "options": [
         {
           "answer": "Quickly pack up and leave the campsite, avoiding any potential danger.",
-          "score": {}
+          "score": {
+            "tower": 1,
+            "death": 2,
+            "hermit": 3
+          }
         },
         {
           "answer": "Attempt to scare the bears away, protecting your belongings.",
-          "score": {}
+          "score": {
+            "temperance": 1,
+            "judgement": 2,
+            "justice": 3
+          }
         },
         {
           "answer": "Remain calm and observe the bears, enjoying the unique experience.",
-          "score": {}
+          "score": {
+            "chariot": 1,
+            "strength": 2,
+            "justice": 3
+          }
         }
       ]
     },
@@ -235,15 +366,27 @@
       "options": [
         {
           "answer": "Take the stone and leave the temple, risking potential danger for a valuable reward.",
-          "score": {}
+          "score": {
+            "emperor": 3,
+            "devil": 2,
+            "fool": 1
+          }
         },
         {
           "answer": "Leave the stone and continue exploring the temple, avoiding any potential danger.",
-          "score": {}
+          "score": {
+            "hanged man": 3,
+            "justice": 2,
+            "hermit": 1
+          }
         },
         {
           "answer": "Turn and attempt to investigate the source of the whisper.",
-          "score": {}
+          "score": {
+            "high priestess": 3,
+            "hermit": 2,
+            "strength": 1
+          }
         }
       ]
     },
@@ -253,15 +396,27 @@
       "options": [
         {
           "answer": "Respect the wishes of the travelers and continue your journey, risking potential dehydration.",
-          "score": {}
+          "score": {
+            "hermit": 1,
+            "temperance": 2,
+            "justice": 3
+          }
         },
         {
           "answer": "Attempt to negotiate with the travelers, sharing the resources in a peaceful manner.",
-          "score": {}
+          "score": {
+            "temperance": 3,
+            "justice": 2,
+            "hanged-man": 1
+          }
         },
         {
           "answer": "Take the resources by force, prioritizing your own survival.",
-          "score": {}
+          "score": {
+            "tower": 3,
+            "chariot": 2,
+            "strength": 1
+          }
         }
       ]
     },
@@ -271,15 +426,27 @@
       "options": [
         {
           "answer": "Give the performer a generous tip to show your appreciation of his ambition.",
-          "score": {}
+          "score": {
+            "temperance": 1,
+            "judgement": 2,
+            "chariot": 3
+          }
         },
         {
           "answer": "Give a small tip, acknowledging their performance.",
-          "score": {}
+          "score": {
+            "justice": 1,
+            "strength": 2,
+            "hermit": 3
+          }
         },
         {
           "answer": "Walk away without leaving a tip.",
-          "score": {}
+          "score": {
+            "tower": 1,
+            "death": 2,
+            "fool": 3
+          }
         }
       ]
     },
@@ -289,15 +456,27 @@
       "options": [
         {
           "answer": "Continue onward through the forest alone.",
-          "score": {}
+          "score": {
+            "hermit": 3,
+            "hanged-man": 2,
+            "fool": 1
+          }
         },
         {
           "answer": "Search for a longer route to bypass the forest.",
-          "score": {}
+          "score": {
+            "chariot": 3,
+            "temperance": 2,
+            "strength": 1
+          }
         },
         {
           "answer": "Turn back, seeking a guide who knows the forest well to travel alongside.",
-          "score": {}
+          "score": {
+            "emperor": 3,
+            "hierophant": 2,
+            "magician": 1
+          }
         }
       ]
     },
@@ -307,15 +486,27 @@
       "options": [
         {
           "answer": "Offer to help the family with your resources, disregarding the perception of said creatures.",
-          "score": {}
+          "score": {
+            "temperance": 3,
+            "justice": 2,
+            "strength": 1
+          }
         },
         {
           "answer": "Continue on your way, prioritizing your own safety.",
-          "score": {}
+          "score": {
+            "tower": 3,
+            "death": 2,
+            "hermit": 1
+          }
         },
         {
           "answer": "Shout toward the family, informing them of the nearest town in which they may find shelter.",
-          "score": {}
+          "score": {
+            "judgement": 3,
+            "chariot": 2,
+            "hermit": 1
+          }
         }
       ]
     },
@@ -325,15 +516,27 @@
       "options": [
         {
           "answer": "Attempt to remove the fragile butterfly without harming the spider's web.",
-          "score": {}
+          "score": {
+            "justice": 3,
+            "temperance": 2,
+            "hermit": 1
+          }
         },
         {
           "answer": "Destroy the spider's web, allowing the butterfly to fly free.",
-          "score": {}
+          "score": {
+            "tower": 3,
+            "death": 2,
+            "strength": 1
+          }
         },
         {
           "answer": "Leave the butterfly behind; it is part of nature's cycle.",
-          "score": {}
+          "score": {
+            "hanged-man": 3,
+            "fool": 2,
+            "judgement": 1
+          }
         }
       ]
     },
@@ -343,15 +546,27 @@
       "options": [
         {
           "answer": "Attempt to heal the dragon, expending your resources.",
-          "score": {}
+          "score": {
+            "temperance": 3,
+            "justice": 2,
+            "healing": 1
+          }
         },
         {
           "answer": "Leave the dragon alone, as it might be dangerous.",
-          "score": {}
+          "score": {
+            "hermit": 3,
+            "death": 2,
+            "tower": 1
+          }
         },
         {
           "answer": "Slay the dragon, putting an end to its misery.",
-          "score": {}
+          "score": {
+            "strength": 3,
+            "judgement": 2,
+            "death": 1
+          }
         }
       ]
     },
@@ -361,15 +576,27 @@
       "options": [
         {
           "answer": "Respect the majesty of the stag, instead opting to look for alternative food sources.",
-          "score": {}
+          "score": {
+            "justice": 3,
+            "hermit": 2,
+            "temperance": 1
+          }
         },
         {
           "answer": "Slay the stag, using its parts to survive.",
-          "score": {}
+          "score": {
+            "death": 3,
+            "strength": 2,
+            "tower": 1
+          }
         },
         {
           "answer": "Awaken the stag so that you may ask for food, hoping to receive its empathy.",
-          "score": {}
+          "score": {
+            "chariot": 3,
+            "emperor": 2,
+            "lovers": 1
+          }
         }
       ]
     }
