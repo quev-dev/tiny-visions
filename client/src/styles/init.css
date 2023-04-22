@@ -4,8 +4,39 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
+:root {
+  --cAccent: #f4387c;
+  --cDarker: #1c1b22;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+}
+
+html {
+  /* Firefox */
+  scrollbar-color: var(--cAccent) var(--cDarker);
+  scrollbar-width: thin;
+
+  /* WebKit */
+  scrollbar-width: thin;
+  scrollbar-color: var(--cAccent) var(--cDarker);
+}
+html::-webkit-scrollbar {
+  background-color: var(--cDarker);
+  width: 12px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--cAccent);
+  border-radius: 100vw;
+  border: solid 2px var(--cAccent);
+}
+html::-webkit-scrollbar-track {
+  background-color: var(--cDarker);
+  margin-block: 0.5em;
+}
+html::-webkit-scrollbar-corner {
+  background-color: var(--cDarker);
 }
 
 .tarot-grid {
