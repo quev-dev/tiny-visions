@@ -1,16 +1,5 @@
 # Tiny Visions
 
-## (Description here)
+## Introduction
 
-### Live Version of Project
-
-(link here)
-
-### Introduction
-
-This web application...
-
-### How it Works:
-
-(gif here)
-(Instructions here)
+A work-in-progress front-end web app aiming to create a modern, minimalistic experience for tarot card readings and quizzes.
