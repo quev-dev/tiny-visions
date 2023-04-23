@@ -26,10 +26,10 @@ export default function Navbar({ activeLink = '' }) {
               <li>
                 {activeLink === 'quiz' ? (
                   <a href='/quiz' className='text-palette-c-accent'>
-                    Test
+                    Quiz
                   </a>
                 ) : (
-                  <a href='/quiz'>Test</a>
+                  <a href='/quiz'>Quiz</a>
                 )}
               </li>
               <li>
@@ -77,10 +77,10 @@ export default function Navbar({ activeLink = '' }) {
           <li>
             {activeLink === 'quiz' ? (
               <a href='/quiz' className='text-palette-c-accent'>
-                Test
+                Quiz
               </a>
             ) : (
-              <a href='/quiz'>Test</a>
+              <a href='/quiz'>Quiz</a>
             )}
           </li>
           <li>

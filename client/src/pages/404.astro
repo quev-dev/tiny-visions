@@ -7,14 +7,16 @@ import '../styles/init.css';
 
 <Layout title='Tiny Visions - Page Not Found'>
   <main
-    class='mx-4 bg-palette-c-dark text-palette-c-light flex flex-col items-center justify-center h-screen'
+    class='mx-4 bg-palette-c-dark text-palette-c-light flex flex-col items-center justify-center h-screen md:text-xl'
   >
-    <header class='bg-palette-c-input px-8 py-12 w-full md:w-1/2'>
-      <h2 class='text-2xl font-bold text-palette-c-accent'>404</h2>
-      <p>The page you're looking for does not exist.</p>
+    <header class='bg-palette-c-input px-12 py-16 w-full md:w-1/2'>
+      <h2 class='text-4xl font-bold text-palette-c-accent mb-2'>404</h2>
+      <p class="text-xl md:text-2xl">The page you hunt for has vanished from our realm.</p>
     </header>
-    <footer class='bg-palette-c-darker px-8 py-4 w-full md:w-1/2'>
-      <a href='/' class='text-palette-c-accent'>Return to main page</a>
+    <footer class='bg-palette-c-darker px-12 py-8 w-full md:w-1/2'>
+      <p class="text-palette-c-light">
+        Lost? Step through the portal to our mystical <a href="/" class="text-palette-c-accent">home</a>.
+      </p>
     </footer>
   </main>
 </Layout>

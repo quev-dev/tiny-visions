@@ -8,41 +8,43 @@ import '../styles/init.css';
 
 <Layout title='Tiny Visions - Readings'>
   <Navbar client:load activeLink="readings" />
-  <main
-    class='bg-palette-c-dark text-palette-c-light max-w-4xl mx-auto sm:text-2xl px-4 sm:px-8'
-  >
+  <main class='bg-palette-c-dark text-palette-c-light md:text-xl'>
     <Divider />
-    <header class='my-12'>
-      <h2
-        class='text-center text-2xl sm:text-4xl mb-16 font-bold text-palette-c-accent'
-      >
-        Readings
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Consectetur libero
-        id faucibus nisl tincidunt eget nullam non. Blandit aliquam etiam erat
-        velit scelerisque in dictum. At urna condimentum mattis pellentesque id.
-        Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
-      </p>
+    <header class='flex flex-col items-center justify-center m-4'>
+      <h2 class='text-2xl sm:text-4xl text-center font-bold text-palette-c-accent'>Readings</h2>
+      <div class="m-8 sm:text-2xl text-left md:w-1/2">
+        <p class="mb-2">
+          Taking the traditional path, a classic tarot card reading enables you to dive deeper.
+        </p>
+        <p class="mb-2">
+          In a <a href="readings/1-card" class="text-palette-c-accent">one card reading</a>, a single tarot card is drawn to interpret its meaning.
+        </p>
+        <p>
+          In a <a href="readings/3-card" class="text-palette-c-accent">three card reading</a>, three tarot cards are drawn, allowing you to interpret their meanings and ties to one another. From left to right, each card represents the past, present, and future.
+        </p>
+      </div>
+      
     </header>
     <section
-      class='mt-6 text-center grid md:grid-cols-2 max-w-xl gap-4 mx-auto items-center justify-center'
+      class='my-6 text-center grid md:grid-cols-2 max-w-xl gap-4 mx-auto items-center justify-center'
     >
       <a href="readings/1-card">
         <button
-          class='rounded-sm py-2 px-8 bg-palette-c-accent text-palette-c-light'
+          class='rounded-md py-2 px-8 bg-palette-c-accent text-palette-c-light'
         >
           one card reading
         </button>
       </a>
       <a href="readings/3-card">
           <button
-            class='rounded-sm py-2 px-8 bg-palette-c-accent text-palette-c-light'
+            class='rounded-md py-2 px-8 bg-palette-c-accent text-palette-c-light'
           >
             three card reading
           </button>
       </a>
     </section>
+
+    <br/>
+    <Divider/>
   </main>
 </Layout>
