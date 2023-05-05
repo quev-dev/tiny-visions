@@ -1,9 +1,8 @@
 export default function Hamburger() {
   return (
     <div className='flex items-center justify-center'>
-      <button className='text-palette-c-accent focus:outline-none'>
-        <svg
-          className='h-6 w-6'
+      <svg
+          className='h-6 w-6 text-palette-c-accent'
           fill='none'
           viewBox='0 0 24 24'
           stroke='currentColor'
@@ -15,7 +14,6 @@ export default function Hamburger() {
             d='M4 6h16M4 12h16M4 18h16'
           />
         </svg>
-      </button>
     </div>
   );
 }
