@@ -2,33 +2,38 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
 import Divider from '../components/Divider.jsx';
+import Quiz from '@components/Quiz.jsx'
+
+import quiz from '@content/json/quiz.json';
 
 import '../styles/init.css';
 ---
 
 <Layout title='Tiny Visions - Quiz'>
   <Navbar client:load activeLink="quiz" />
-  <main class='bg-palette-c-dark text-palette-c-light md:text-xl'>
-    <Divider/>
-    <header class='flex flex-col items-center justify-center m-4'>
-      <h2 class='text-2xl sm:text-4xl text-center font-bold text-palette-c-accent'>Quiz</h2>
-      <div class='m-8 sm:text-2xl text-left md:w-1/2'>
-        <p class="mb-2">
-          Embark on a fantastical quest, facing difficult challenges that will test your very character.
-        </p>
-        <p class="mb-2">
-          It is crucial to remember that there are no correct answers on this quest. Harness your judgement and make decisions in line with your beliefs.
-        </p>
-        <p>
-          Upon completion, you will receive a tarot card attuned to your choices.
-        </p>
-      </div>
-      <button class='rounded-md py-2 px-8 bg-palette-c-accent text-palette-c-light'>
-        Begin Quest
-      </button>
+  <Divider/>
+  <main
+    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
+  >
+    <header class='my-12 max-w-4xl mx-auto'>
+      <h2
+        class='text-center text-2xl sm:text-4xl mb-16 font-bold text-palette-c-accent'
+      >
+        Quiz
+      </h2>
+      <p class="mb-2">
+        Embark on a fantastical quest, facing difficult challenges that will test your very character.
+      </p>
+      <p class="mb-2">
+        It is crucial to remember that there are no correct answers on this quest. Harness your judgement and make decisions in line with your beliefs.
+      </p>
+      <p>
+        Upon completion, you will receive a tarot card attuned to your choices.
+      </p>
     </header>
-
-    <br/>
     <Divider/>
+    <section class='max-w-5xl mx-auto mt-12'>
+      <Quiz client:load quiz={quiz} />
+    </section>
   </main>
 </Layout>

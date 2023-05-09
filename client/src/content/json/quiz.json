@@ -1,604 +1,602 @@
-{
-  "questions": [
-    {
-      "id": 0,
-      "question": "The beautiful music from the street performer's mandolin comes to a sudden stop as a group of young rascals demand to take his money.",
-      "options": [
-        {
-          "answer": "Keep to yourself and make your way along the road.",
-          "score": {
-            "tower": 3,
-            "death": 2,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Observe the scuffle from a safe distance while you search for guards who can help.",
-          "score": {
-            "temperance": 3,
-            "judgement": 2,
-            "justice": 1
-          }
-        },
-        {
-          "answer": "Draw your blade and approach the struggle to defend the performer.",
-          "score": {
-            "chariot": 3,
-            "strength": 2,
-            "justice": 1
-          }
+[
+  {
+    "id": 0,
+    "question": "The beautiful music from the street performer's mandolin comes to a sudden stop as a group of young rascals demand to take his money.",
+    "options": [
+      {
+        "answer": "Keep to yourself and make your way along the road.",
+        "score": {
+          "tower": 3,
+          "death": 2,
+          "hermit": 1
         }
-      ]
-    },
-    {
-      "id": 1,
-      "question": "The sweltering sun beats down onto you as you trek through the barren wasteland. A lizard scurries across your path; politely requesting a sip of water.",
-      "options": [
-        {
-          "answer": "Continue onward and save your resources.",
-          "score": {
-            "hermit": 1,
-            "strength": 2,
-            "tower": 3
-          }
-        },
-        {
-          "answer": "Provide it with a sip from your canteen.",
-          "score": {
-            "temperance": 1,
-            "chariot": 2,
-            "hermit": 3
-          }
-        },
-        {
-          "answer": "Offer it to travel alongside you.",
-          "score": {
-            "hanged man": 1,
-            "lovers": 2,
-            "emperor": 3
-          }
+      },
+      {
+        "answer": "Observe the scuffle from a safe distance while you search for guards who can help.",
+        "score": {
+          "temperance": 3,
+          "judgement": 2,
+          "justice": 1
         }
-      ]
-    },
-    {
-      "id": 2,
-      "question": "Hiking through the chilly mountains in the cold afternoon, you encounter a delicate village. The villagers welcome you with kindness, inviting you to rest and stay the night.",
-      "options": [
-        {
-          "answer": "Accept their invitation, spending the night in one of their rooms.",
-          "score": {
-            "lovers": 3,
-            "temperance": 2,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Decline their invitation; they may be dangerous.",
-          "score": {
-            "hanged-man": 3,
-            "tower": 2,
-            "devil": 1
-          }
-        },
-        {
-          "answer": "Offer to share dinner with them, so that you may become acquainted before making a decision.",
-          "score": {
-            "chariot": 3,
-            "justice": 2,
-            "hermit": 1
-          }
+      },
+      {
+        "answer": "Draw your blade and approach the struggle to defend the performer.",
+        "score": {
+          "chariot": 3,
+          "strength": 2,
+          "justice": 1
         }
-      ]
-    },
-    {
-      "id": 3,
-      "question": "Bustling in the market were hundreds of people; shopping for food. Stumbling upon a pouch with dozens of gold coins, you find that the owner nowhere in sight - your brother has fallen terribly ill, though you could purchase an antidote with the money.",
-      "options": [
-        {
-          "answer": "Bring the pouch to the authorities.",
-          "score": {
-            "justice": 3,
-            "temperance": 2,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Search for the owner, so that you may return it personally.",
-          "score": {
-            "justice": 2,
-            "judgement": 3,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Keep the pouch and head to purchase an antidote.",
-          "score": {
-            "tower": 3,
-            "death": 1,
-            "chariot": 2
-          }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "question": "The sweltering sun beats down onto you as you trek through the barren wasteland. A lizard scurries across your path; politely requesting a sip of water.",
+    "options": [
+      {
+        "answer": "Continue onward and save your resources.",
+        "score": {
+          "hermit": 1,
+          "strength": 2,
+          "tower": 3
         }
-      ]
-    },
-    {
-      "id": 4,
-      "question": "As the whispers of townsfolk pass by you within a busy street, you discover that a friend has spread poor rumors about you.",
-      "options": [
-        {
-          "answer": "Confront your friend.",
-          "score": {
-            "strength": 3,
-            "justice": 2,
-            "temperance": 1
-          }
-        },
-        {
-          "answer": "Cut ties with your friend.",
-          "score": {
-            "hermit": 3,
-            "tower": 2,
-            "death": 1
-          }
-        },
-        {
-          "answer": "Sabotage your friend's image in retaliation.",
-          "score": {
-            "devil": 3,
-            "tower": 2,
-            "judgement": 1
-          }
+      },
+      {
+        "answer": "Provide it with a sip from your canteen.",
+        "score": {
+          "temperance": 1,
+          "chariot": 2,
+          "hermit": 3
         }
-      ]
-    },
-    {
-      "id": 5,
-      "question": "The dense, wet jungle casted the forest floor a dim green. Cutting a path forward with your machete, you notice a group of robed figures seated in a circle, surrounding the carcass of a chameleon.",
-      "options": [
-        {
-          "answer": "Disregard the circle and sneak past it, using the tall trees for cover.",
-          "score": {
-            "hermit": 1,
-            "hanged man": 2,
-            "moon": 3
-          }
-        },
-        {
-          "answer": "Find a spot to stay nearby, studying what you presume is a ritual.",
-          "score": {
-            "high priestess": 1,
-            "temperance": 2,
-            "judgement": 3
-          }
-        },
-        {
-          "answer": "Create a noise distraction some space away with the hopes of edging closer to investigate.",
-          "score": {
-            "fool": 1,
-            "magician": 2,
-            "the world": 3
-          }
+      },
+      {
+        "answer": "Offer it to travel alongside you.",
+        "score": {
+          "hanged man": 1,
+          "lovers": 2,
+          "emperor": 3
         }
-      ]
-    },
-    {
-      "id": 6,
-      "question": "After being captured by pirates, you are spared as the pirates launch you onto a deserted island decorated with trees and rocks; taking their leave. You find the entrance to an intricate cave system, pointing to an underground river.",
-      "options": [
-        {
-          "answer": "Investigate the cave with the hopes of finding new island resources.",
-          "score": {
-            "the-fool": 1,
-            "the-hanged-man": 2,
-            "the-hermit": 3
-          }
-        },
-        {
-          "answer": "Ignore the cave and carve a message into the shore sand with a stick, hoping to catch the attention of passing ships.",
-          "score": {
-            "the-hermit": 1,
-            "the-fool": 2,
-            "the-hanged-man": 3
-          }
-        },
-        {
-          "answer": "Exit the cave, instead focusing on collecting food and creating shelter.",
-          "score": {
-            "the-hermit": 1,
-            "the-fool": 2,
-            "the-hanged-man": 3
-          }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Hiking through the chilly mountains in the cold afternoon, you encounter a delicate village. The villagers welcome you with kindness, inviting you to rest and stay the night.",
+    "options": [
+      {
+        "answer": "Accept their invitation, spending the night in one of their rooms.",
+        "score": {
+          "lovers": 3,
+          "temperance": 2,
+          "hermit": 1
         }
-      ]
-    },
-    {
-      "id": 7,
-      "question": "As the cool air breezes across the beach shoreline, you turn past a large column of stones to find a stranded humpback whale, turned on its side just by the water.",
-      "options": [
-        {
-          "answer": "Head back into the closest town, in search of a rescue team.",
-          "score": {
-            "temperance": 1,
-            "justice": 2,
-            "chariot": 3
-          }
-        },
-        {
-          "answer": "Attempt to push the whale back into the water on your own.",
-          "score": {
-            "hermit": 1,
-            "strength": 2,
-            "chariot": 3
-          }
-        },
-        {
-          "answer": "Leave the whale behind, letting nature take its course.",
-          "score": {
-            "death": 1,
-            "tower": 2,
-            "hermit": 3
-          }
+      },
+      {
+        "answer": "Decline their invitation; they may be dangerous.",
+        "score": {
+          "hanged-man": 3,
+          "tower": 2,
+          "devil": 1
         }
-      ]
-    },
-    {
-      "id": 8,
-      "question": "After being separated from the other members of your exploration team, you find yourself lost in a labyrinthine cave system adorned with shiny rocks. Suddenly, the sound of a slow, vibrant hum echoes throughout the vast tunnels.",
-      "options": [
-        {
-          "answer": "Follow the noise with the hopes of finding an exit route.",
-          "score": {
-            "fool": 1,
-            "hanged man": 2,
-            "hermit": 3
-          }
-        },
-        {
-          "answer": "Stand still, letting the echoes pass by before continuing to climb through the tunnels.",
-          "score": {
-            "justice": 1,
-            "strength": 2,
-            "temperance": 3
-          }
-        },
-        {
-          "answer": "Call out for help, hoping to be heard by one of the exploration members.",
-          "score": {
-            "chariot": 1,
-            "tower": 2,
-            "judgement": 3
-          }
+      },
+      {
+        "answer": "Offer to share dinner with them, so that you may become acquainted before making a decision.",
+        "score": {
+          "chariot": 3,
+          "justice": 2,
+          "hermit": 1
         }
-      ]
-    },
-    {
-      "id": 9,
-      "question": "Lost in a dense forest with no clear path in sight, you feel a faint warmth as you stumble upon a small cottage; smoke rising from the chimney.",
-      "options": [
-        {
-          "answer": "Knock at the wooden door of the cottage, hoping for help.",
-          "score": {
-            "hermit": 3,
-            "emperor": 2,
-            "chariot": 1
-          }
-        },
-        {
-          "answer": "Ignore the cottage and continue your trek through the forest.",
-          "score": {
-            "fool": 3,
-            "tower": 2,
-            "death": 1
-          }
-        },
-        {
-          "answer": "Take the time to spy on the cottage until you arrive at a conclusion.",
-          "score": {
-            "justice": 3,
-            "moon": 2,
-            "temperance": 1
-          }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Bustling in the market were hundreds of people; shopping for food. Stumbling upon a pouch with dozens of gold coins, you find that the owner nowhere in sight - your brother has fallen terribly ill, though you could purchase an antidote with the money.",
+    "options": [
+      {
+        "answer": "Bring the pouch to the authorities.",
+        "score": {
+          "justice": 3,
+          "temperance": 2,
+          "hermit": 1
         }
-      ]
-    },
-    {
-      "id": 10,
-      "question": "As you wander through a barren wasteland, you notice a group of travelers in the distance, approaching quickly. They are unarmed, and seem to be in need of assistance.",
-      "options": [
-        {
-          "answer": "Offer them a helping hand, providing whatever resources you have.",
-          "score": {
-            "chariot": 3,
-            "temperance": 2,
-            "justice": 1
-          }
-        },
-        {
-          "answer": "Remain cautious and continue on your own path.",
-          "score": {
-            "hermit": 3,
-            "justice": 2,
-            "death": 1
-          }
-        },
-        {
-          "answer": "Observe from a distance, analyzing their intentions before making a decision.",
-          "score": {
-            "judgement": 3,
-            "tower": 2,
-            "hermit": 1
-          }
+      },
+      {
+        "answer": "Search for the owner, so that you may return it personally.",
+        "score": {
+          "justice": 2,
+          "judgement": 3,
+          "hermit": 1
         }
-      ]
-    },
-    {
-      "id": 11,
-      "question": "While camping in the woods, you discover that your campsite has been intruded upon by three wild bears. They don't pose an immediate threat, instead seeming passive at your presence.",
-      "options": [
-        {
-          "answer": "Quickly pack up and leave the campsite, avoiding any potential danger.",
-          "score": {
-            "tower": 1,
-            "death": 2,
-            "hermit": 3
-          }
-        },
-        {
-          "answer": "Attempt to scare the bears away, protecting your belongings.",
-          "score": {
-            "temperance": 1,
-            "judgement": 2,
-            "justice": 3
-          }
-        },
-        {
-          "answer": "Remain calm and observe the bears, enjoying the unique experience.",
-          "score": {
-            "chariot": 1,
-            "strength": 2,
-            "justice": 3
-          }
+      },
+      {
+        "answer": "Keep the pouch and head to purchase an antidote.",
+        "score": {
+          "tower": 3,
+          "death": 1,
+          "chariot": 2
         }
-      ]
-    },
-    {
-      "id": 12,
-      "question": "While exploring an abandoned temple, you find a shiny, valuable stone. However, as you reach for it, you hear a faint whisper, too subtle to decode.",
-      "options": [
-        {
-          "answer": "Take the stone and leave the temple, risking potential danger for a valuable reward.",
-          "score": {
-            "emperor": 3,
-            "devil": 2,
-            "fool": 1
-          }
-        },
-        {
-          "answer": "Leave the stone and continue exploring the temple, avoiding any potential danger.",
-          "score": {
-            "hanged man": 3,
-            "justice": 2,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Turn and attempt to investigate the source of the whisper.",
-          "score": {
-            "high priestess": 3,
-            "hermit": 2,
-            "strength": 1
-          }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "question": "As the whispers of townsfolk pass by you within a busy street, you discover that a friend has spread poor rumors about you.",
+    "options": [
+      {
+        "answer": "Confront your friend.",
+        "score": {
+          "strength": 3,
+          "justice": 2,
+          "temperance": 1
         }
-      ]
-    },
-    {
-      "id": 13,
-      "question": "As you journey through a desolate desert, you come across an oasis filled with luscious greenery and a sparkling pool of water. However, a group of travelers have already taken refuge in the oasis and seem unwilling to share the resources.",
-      "options": [
-        {
-          "answer": "Respect the wishes of the travelers and continue your journey, risking potential dehydration.",
-          "score": {
-            "hermit": 1,
-            "temperance": 2,
-            "justice": 3
-          }
-        },
-        {
-          "answer": "Attempt to negotiate with the travelers, sharing the resources in a peaceful manner.",
-          "score": {
-            "temperance": 3,
-            "justice": 2,
-            "hanged-man": 1
-          }
-        },
-        {
-          "answer": "Take the resources by force, prioritizing your own survival.",
-          "score": {
-            "tower": 3,
-            "chariot": 2,
-            "strength": 1
-          }
+      },
+      {
+        "answer": "Cut ties with your friend.",
+        "score": {
+          "hermit": 3,
+          "tower": 2,
+          "death": 1
         }
-      ]
-    },
-    {
-      "id": 14,
-      "question": "While venturing through a citadel, you meet a street performer who seems to be fairly new to playing music. As the performer strums the tune's final notes with his guitar, he holds his hat toward you.",
-      "options": [
-        {
-          "answer": "Give the performer a generous tip to show your appreciation of his ambition.",
-          "score": {
-            "temperance": 1,
-            "judgement": 2,
-            "chariot": 3
-          }
-        },
-        {
-          "answer": "Give a small tip, acknowledging their performance.",
-          "score": {
-            "justice": 1,
-            "strength": 2,
-            "hermit": 3
-          }
-        },
-        {
-          "answer": "Walk away without leaving a tip.",
-          "score": {
-            "tower": 1,
-            "death": 2,
-            "fool": 3
-          }
+      },
+      {
+        "answer": "Sabotage your friend's image in retaliation.",
+        "score": {
+          "devil": 3,
+          "tower": 2,
+          "judgement": 1
         }
-      ]
-    },
-    {
-      "id": 15,
-      "question": "En route to the next city, you find an ominous, haunting forest blocking the path forward. You must pass through it to continue, though a sense of foreboding trickles down your spine as you gaze upon the wooded path.",
-      "options": [
-        {
-          "answer": "Continue onward through the forest alone.",
-          "score": {
-            "hermit": 3,
-            "hanged-man": 2,
-            "fool": 1
-          }
-        },
-        {
-          "answer": "Search for a longer route to bypass the forest.",
-          "score": {
-            "chariot": 3,
-            "temperance": 2,
-            "strength": 1
-          }
-        },
-        {
-          "answer": "Turn back, seeking a guide who knows the forest well to travel alongside.",
-          "score": {
-            "emperor": 3,
-            "hierophant": 2,
-            "magician": 1
-          }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "question": "The dense, wet jungle casted the forest floor a dim green. Cutting a path forward with your machete, you notice a group of robed figures seated in a circle, surrounding the carcass of a chameleon.",
+    "options": [
+      {
+        "answer": "Disregard the circle and sneak past it, using the tall trees for cover.",
+        "score": {
+          "hermit": 1,
+          "hanged man": 2,
+          "moon": 3
         }
-      ]
-    },
-    {
-      "id": 16,
-      "question": "Trudging through the thick snowdrifts with the wind howling fiercely by you, a faint cry for help emanates from far away. Approaching the cry, you find a family of scaled, humanoid creatures which are generally perceived to be cunning and dangerous.",
-      "options": [
-        {
-          "answer": "Offer to help the family with your resources, disregarding the perception of said creatures.",
-          "score": {
-            "temperance": 3,
-            "justice": 2,
-            "strength": 1
-          }
-        },
-        {
-          "answer": "Continue on your way, prioritizing your own safety.",
-          "score": {
-            "tower": 3,
-            "death": 2,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Shout toward the family, informing them of the nearest town in which they may find shelter.",
-          "score": {
-            "judgement": 3,
-            "chariot": 2,
-            "hermit": 1
-          }
+      },
+      {
+        "answer": "Find a spot to stay nearby, studying what you presume is a ritual.",
+        "score": {
+          "high priestess": 1,
+          "temperance": 2,
+          "judgement": 3
         }
-      ]
-    },
-    {
-      "id": 17,
-      "question": "The sun is setting over vast, mystical and colorful garden. Walking along the garden's path, you find a blue butterfly trapped in a spider's web.",
-      "options": [
-        {
-          "answer": "Attempt to remove the fragile butterfly without harming the spider's web.",
-          "score": {
-            "justice": 3,
-            "temperance": 2,
-            "hermit": 1
-          }
-        },
-        {
-          "answer": "Destroy the spider's web, allowing the butterfly to fly free.",
-          "score": {
-            "tower": 3,
-            "death": 2,
-            "strength": 1
-          }
-        },
-        {
-          "answer": "Leave the butterfly behind; it is part of nature's cycle.",
-          "score": {
-            "hanged-man": 3,
-            "fool": 2,
-            "judgement": 1
-          }
+      },
+      {
+        "answer": "Create a noise distraction some space away with the hopes of edging closer to investigate.",
+        "score": {
+          "fool": 1,
+          "magician": 2,
+          "the world": 3
         }
-      ]
-    },
-    {
-      "id": 18,
-      "question": "Treading through a peaceful meadow, you find a small dragon, collapsed on its side from heavy claw wounds. It looks up toward you; lacking the energy to react.",
-      "options": [
-        {
-          "answer": "Attempt to heal the dragon, expending your resources.",
-          "score": {
-            "temperance": 3,
-            "justice": 2,
-            "healing": 1
-          }
-        },
-        {
-          "answer": "Leave the dragon alone, as it might be dangerous.",
-          "score": {
-            "hermit": 3,
-            "death": 2,
-            "tower": 1
-          }
-        },
-        {
-          "answer": "Slay the dragon, putting an end to its misery.",
-          "score": {
-            "strength": 3,
-            "judgement": 2,
-            "death": 1
-          }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "question": "After being captured by pirates, you are spared as the pirates launch you onto a deserted island decorated with trees and rocks; taking their leave. You find the entrance to an intricate cave system, pointing to an underground river.",
+    "options": [
+      {
+        "answer": "Investigate the cave with the hopes of finding new island resources.",
+        "score": {
+          "the-fool": 1,
+          "the-hanged-man": 2,
+          "the-hermit": 3
         }
-      ]
-    },
-    {
-      "id": 19,
-      "question": "Trudging through fields of hills decorated with yellow grass and flowers, you are half-starved, having scarce resources on your venture. A majestic stag sleeps by a large tree; you recount its high intelligence and ability to communicate. You realize the meat of the stag would last you weeks.",
-      "options": [
-        {
-          "answer": "Respect the majesty of the stag, instead opting to look for alternative food sources.",
-          "score": {
-            "justice": 3,
-            "hermit": 2,
-            "temperance": 1
-          }
-        },
-        {
-          "answer": "Slay the stag, using its parts to survive.",
-          "score": {
-            "death": 3,
-            "strength": 2,
-            "tower": 1
-          }
-        },
-        {
-          "answer": "Awaken the stag so that you may ask for food, hoping to receive its empathy.",
-          "score": {
-            "chariot": 3,
-            "emperor": 2,
-            "lovers": 1
-          }
+      },
+      {
+        "answer": "Ignore the cave and carve a message into the shore sand with a stick, hoping to catch the attention of passing ships.",
+        "score": {
+          "the-hermit": 1,
+          "the-fool": 2,
+          "the-hanged-man": 3
         }
-      ]
-    }
-  ]
-}
+      },
+      {
+        "answer": "Exit the cave, instead focusing on collecting food and creating shelter.",
+        "score": {
+          "the-hermit": 1,
+          "the-fool": 2,
+          "the-hanged-man": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "question": "As the cool air breezes across the beach shoreline, you turn past a large column of stones to find a stranded humpback whale, turned on its side just by the water.",
+    "options": [
+      {
+        "answer": "Head back into the closest town, in search of a rescue team.",
+        "score": {
+          "temperance": 1,
+          "justice": 2,
+          "chariot": 3
+        }
+      },
+      {
+        "answer": "Attempt to push the whale back into the water on your own.",
+        "score": {
+          "hermit": 1,
+          "strength": 2,
+          "chariot": 3
+        }
+      },
+      {
+        "answer": "Leave the whale behind, letting nature take its course.",
+        "score": {
+          "death": 1,
+          "tower": 2,
+          "hermit": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "question": "After being separated from the other members of your exploration team, you find yourself lost in a labyrinthine cave system adorned with shiny rocks. Suddenly, the sound of a slow, vibrant hum echoes throughout the vast tunnels.",
+    "options": [
+      {
+        "answer": "Follow the noise with the hopes of finding an exit route.",
+        "score": {
+          "fool": 1,
+          "hanged man": 2,
+          "hermit": 3
+        }
+      },
+      {
+        "answer": "Stand still, letting the echoes pass by before continuing to climb through the tunnels.",
+        "score": {
+          "justice": 1,
+          "strength": 2,
+          "temperance": 3
+        }
+      },
+      {
+        "answer": "Call out for help, hoping to be heard by one of the exploration members.",
+        "score": {
+          "chariot": 1,
+          "tower": 2,
+          "judgement": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Lost in a dense forest with no clear path in sight, you feel a faint warmth as you stumble upon a small cottage; smoke rising from the chimney.",
+    "options": [
+      {
+        "answer": "Knock at the wooden door of the cottage, hoping for help.",
+        "score": {
+          "hermit": 3,
+          "emperor": 2,
+          "chariot": 1
+        }
+      },
+      {
+        "answer": "Ignore the cottage and continue your trek through the forest.",
+        "score": {
+          "fool": 3,
+          "tower": 2,
+          "death": 1
+        }
+      },
+      {
+        "answer": "Take the time to spy on the cottage until you arrive at a conclusion.",
+        "score": {
+          "justice": 3,
+          "moon": 2,
+          "temperance": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "question": "As you wander through a barren wasteland, you notice a group of travelers in the distance, approaching quickly. They are unarmed, and seem to be in need of assistance.",
+    "options": [
+      {
+        "answer": "Offer them a helping hand, providing whatever resources you have.",
+        "score": {
+          "chariot": 3,
+          "temperance": 2,
+          "justice": 1
+        }
+      },
+      {
+        "answer": "Remain cautious and continue on your own path.",
+        "score": {
+          "hermit": 3,
+          "justice": 2,
+          "death": 1
+        }
+      },
+      {
+        "answer": "Observe from a distance, analyzing their intentions before making a decision.",
+        "score": {
+          "judgement": 3,
+          "tower": 2,
+          "hermit": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "question": "While camping in the woods, you discover that your campsite has been intruded upon by three wild bears. They don't pose an immediate threat, instead seeming passive at your presence.",
+    "options": [
+      {
+        "answer": "Quickly pack up and leave the campsite, avoiding any potential danger.",
+        "score": {
+          "tower": 1,
+          "death": 2,
+          "hermit": 3
+        }
+      },
+      {
+        "answer": "Attempt to scare the bears away, protecting your belongings.",
+        "score": {
+          "temperance": 1,
+          "judgement": 2,
+          "justice": 3
+        }
+      },
+      {
+        "answer": "Remain calm and observe the bears, enjoying the unique experience.",
+        "score": {
+          "chariot": 1,
+          "strength": 2,
+          "justice": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "question": "While exploring an abandoned temple, you find a shiny, valuable stone. However, as you reach for it, you hear a faint whisper, too subtle to decode.",
+    "options": [
+      {
+        "answer": "Take the stone and leave the temple, risking potential danger for a valuable reward.",
+        "score": {
+          "emperor": 3,
+          "devil": 2,
+          "fool": 1
+        }
+      },
+      {
+        "answer": "Leave the stone and continue exploring the temple, avoiding any potential danger.",
+        "score": {
+          "hanged man": 3,
+          "justice": 2,
+          "hermit": 1
+        }
+      },
+      {
+        "answer": "Turn and attempt to investigate the source of the whisper.",
+        "score": {
+          "high priestess": 3,
+          "hermit": 2,
+          "strength": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "question": "As you journey through a desolate desert, you come across an oasis filled with luscious greenery and a sparkling pool of water. However, a group of travelers have already taken refuge in the oasis and seem unwilling to share the resources.",
+    "options": [
+      {
+        "answer": "Respect the wishes of the travelers and continue your journey, risking potential dehydration.",
+        "score": {
+          "hermit": 1,
+          "temperance": 2,
+          "justice": 3
+        }
+      },
+      {
+        "answer": "Attempt to negotiate with the travelers, sharing the resources in a peaceful manner.",
+        "score": {
+          "temperance": 3,
+          "justice": 2,
+          "hanged-man": 1
+        }
+      },
+      {
+        "answer": "Take the resources by force, prioritizing your own survival.",
+        "score": {
+          "tower": 3,
+          "chariot": 2,
+          "strength": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "question": "While venturing through a citadel, you meet a street performer who seems to be fairly new to playing music. As the performer strums the tune's final notes with his guitar, he holds his hat toward you.",
+    "options": [
+      {
+        "answer": "Give the performer a generous tip to show your appreciation of his ambition.",
+        "score": {
+          "temperance": 1,
+          "judgement": 2,
+          "chariot": 3
+        }
+      },
+      {
+        "answer": "Give a small tip, acknowledging their performance.",
+        "score": {
+          "justice": 1,
+          "strength": 2,
+          "hermit": 3
+        }
+      },
+      {
+        "answer": "Walk away without leaving a tip.",
+        "score": {
+          "tower": 1,
+          "death": 2,
+          "fool": 3
+        }
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "question": "En route to the next city, you find an ominous, haunting forest blocking the path forward. You must pass through it to continue, though a sense of foreboding trickles down your spine as you gaze upon the wooded path.",
+    "options": [
+      {
+        "answer": "Continue onward through the forest alone.",
+        "score": {
+          "hermit": 3,
+          "hanged-man": 2,
+          "fool": 1
+        }
+      },
+      {
+        "answer": "Search for a longer route to bypass the forest.",
+        "score": {
+          "chariot": 3,
+          "temperance": 2,
+          "strength": 1
+        }
+      },
+      {
+        "answer": "Turn back, seeking a guide who knows the forest well to travel alongside.",
+        "score": {
+          "emperor": 3,
+          "hierophant": 2,
+          "magician": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "question": "Trudging through the thick snowdrifts with the wind howling fiercely by you, a faint cry for help emanates from far away. Approaching the cry, you find a family of scaled, humanoid creatures which are generally perceived to be cunning and dangerous.",
+    "options": [
+      {
+        "answer": "Offer to help the family with your resources, disregarding the perception of said creatures.",
+        "score": {
+          "temperance": 3,
+          "justice": 2,
+          "strength": 1
+        }
+      },
+      {
+        "answer": "Continue on your way, prioritizing your own safety.",
+        "score": {
+          "tower": 3,
+          "death": 2,
+          "hermit": 1
+        }
+      },
+      {
+        "answer": "Shout toward the family, informing them of the nearest town in which they may find shelter.",
+        "score": {
+          "judgement": 3,
+          "chariot": 2,
+          "hermit": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "question": "The sun is setting over vast, mystical and colorful garden. Walking along the garden's path, you find a blue butterfly trapped in a spider's web.",
+    "options": [
+      {
+        "answer": "Attempt to remove the fragile butterfly without harming the spider's web.",
+        "score": {
+          "justice": 3,
+          "temperance": 2,
+          "hermit": 1
+        }
+      },
+      {
+        "answer": "Destroy the spider's web, allowing the butterfly to fly free.",
+        "score": {
+          "tower": 3,
+          "death": 2,
+          "strength": 1
+        }
+      },
+      {
+        "answer": "Leave the butterfly behind; it is part of nature's cycle.",
+        "score": {
+          "hanged-man": 3,
+          "fool": 2,
+          "judgement": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "question": "Treading through a peaceful meadow, you find a small dragon, collapsed on its side from heavy claw wounds. It looks up toward you; lacking the energy to react.",
+    "options": [
+      {
+        "answer": "Attempt to heal the dragon, expending your resources.",
+        "score": {
+          "temperance": 3,
+          "justice": 2,
+          "healing": 1
+        }
+      },
+      {
+        "answer": "Leave the dragon alone, as it might be dangerous.",
+        "score": {
+          "hermit": 3,
+          "death": 2,
+          "tower": 1
+        }
+      },
+      {
+        "answer": "Slay the dragon, putting an end to its misery.",
+        "score": {
+          "strength": 3,
+          "judgement": 2,
+          "death": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "question": "Trudging through fields of hills decorated with yellow grass and flowers, you are half-starved, having scarce resources on your venture. A majestic stag sleeps by a large tree; you recount its high intelligence and ability to communicate. You realize the meat of the stag would last you weeks.",
+    "options": [
+      {
+        "answer": "Respect the majesty of the stag, instead opting to look for alternative food sources.",
+        "score": {
+          "justice": 3,
+          "hermit": 2,
+          "temperance": 1
+        }
+      },
+      {
+        "answer": "Slay the stag, using its parts to survive.",
+        "score": {
+          "death": 3,
+          "strength": 2,
+          "tower": 1
+        }
+      },
+      {
+        "answer": "Awaken the stag so that you may ask for food, hoping to receive its empathy.",
+        "score": {
+          "chariot": 3,
+          "emperor": 2,
+          "lovers": 1
+        }
+      }
+    ]
+  }
+]

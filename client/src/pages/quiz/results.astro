@@ -1,0 +1,16 @@
+---
+import Layout from '@src/layouts/Layout.astro';
+import Navbar from '@components/Navbar.jsx';
+import Divider from '@components/Divider.jsx';
+import QuizResults from '@components/QuizResults.jsx'
+
+import quiz from '@content/json/quiz.json';
+
+import '@src/styles/init.css';
+---
+
+<Layout title='Tiny Visions - Quiz Results'>
+  <Navbar client:load activeLink="quiz" />
+  <Divider/>
+  <QuizResults client:only quiz={quiz} />
+</Layout>
