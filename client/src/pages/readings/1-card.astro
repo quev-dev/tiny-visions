@@ -2,13 +2,15 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.jsx';
 import Divider from '../../components/Divider.jsx';
-
 import CardPlaceholder from '../../components/templates/CardPlaceholder';
+import OneCardReading from "../../components/OneCardReading.jsx";
 
 import '../../styles/init.css';
+
+const cardData = await Astro.glob("../../content/markdown/cards/*.md");
 ---
 
-<Layout title='Tiny Visions - Landing Page'>
+<Layout title='Tiny Visions - One Card Reading'>
   <Navbar client:load activeLink="readings" />
   <main class='bg-palette-c-dark text-palette-c-light sm:text-2xl'>
     <Divider/>
@@ -28,11 +30,7 @@ import '../../styles/init.css';
       </p>
     </section>
 
-    <section class="flex flex-col gap-4 m-12 items-center justify-center">
-      <button class='rounded-md py-2 px-8 bg-palette-c-accent text-palette-c-light'>
-        Begin Reading
-      </button>
-    </section>
+    <OneCardReading cards={cardData} client:load />
     
     <Divider/>
 
