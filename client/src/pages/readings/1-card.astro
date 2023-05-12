@@ -7,11 +7,12 @@ import OneCardReading from "../../components/OneCardReading.jsx";
 
 import '../../styles/init.css';
 
+const fileNameREGEX = /\/([^\/]+)\.[^\.]+$/;
 const cardData = await Astro.glob("../../content/markdown/cards/*.md");
 const mappedCardData = cardData.map((data) => {
   return {
     frontmatter: data.frontmatter,
-    content: data.rawContent()
+    content: data.rawContent(),
   }
 })
 ---
@@ -36,7 +37,7 @@ const mappedCardData = cardData.map((data) => {
       </p>
     </section>
 
-    <OneCardReading cards={mappedCardData} client:only />
+    <OneCardReading cards={mappedCardData} client:load />
     
     <Divider/>
 

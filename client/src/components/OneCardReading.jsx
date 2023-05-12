@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import OneCardContent from './templates/OneCardContent';
 
 export default function OneCardReading({ cards }) {
   const [startQuiz, setStartQuiz] = useState(false);
@@ -16,31 +17,25 @@ export default function OneCardReading({ cards }) {
 
   return (
     <section class='flex flex-col gap-4 m-12 items-center justify-center'>
-      <button
-        onClick={drawCard}
-        class='rounded-md py-2 px-8 bg-palette-c-accent text-palette-c-light'
-      >
-        Begin Reading
-      </button>
+      {!startQuiz && (
+        <button
+          onClick={drawCard}
+          class='rounded-md py-2 px-8 bg-palette-c-accent'
+        >
+          Begin Reading
+        </button>
+      )}
 
       {startQuiz && (
         <div>
-          <p>Quiz started</p>
-          {cards && (
-            <ul>
-              {cards.map((card, index) => (
-                <li key={index}>
-                  {index}: {card.frontmatter.keywords}
-                </li>
-              ))}
-            </ul>
-          )}
-          <p>---</p>
           {drawnCard && (
-            <ul>
-              <li>{drawnCard.content}</li>
-              <li>{drawnCard.frontmatter.keywords}</li>
-            </ul>
+            <OneCardContent
+              text={drawnCard.content}
+              title={drawnCard.frontmatter.title}
+              keywords={drawnCard.frontmatter.keywords}
+              reading={drawnCard.frontmatter.reading}
+              reverse={drawnCard.frontmatter.reverse}
+            />
           )}
         </div>
       )}
