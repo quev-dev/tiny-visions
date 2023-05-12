@@ -38,7 +38,7 @@ export default function OneCardReading({ cards }) {
           <p>---</p>
           {drawnCard && (
             <ul>
-              <li>{drawnCard.rawContent()}</li>
+              <li>{drawnCard.content}</li>
               <li>{drawnCard.frontmatter.keywords}</li>
             </ul>
           )}

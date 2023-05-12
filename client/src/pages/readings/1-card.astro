@@ -8,6 +8,12 @@ import OneCardReading from "../../components/OneCardReading.jsx";
 import '../../styles/init.css';
 
 const cardData = await Astro.glob("../../content/markdown/cards/*.md");
+const mappedCardData = cardData.map((data) => {
+  return {
+    frontmatter: data.frontmatter,
+    content: data.rawContent()
+  }
+})
 ---
 
 <Layout title='Tiny Visions - One Card Reading'>
@@ -30,7 +36,7 @@ const cardData = await Astro.glob("../../content/markdown/cards/*.md");
       </p>
     </section>
 
-    <OneCardReading cards={cardData} client:load />
+    <OneCardReading cards={mappedCardData} client:only />
     
     <Divider/>
 
