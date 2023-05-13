@@ -37,7 +37,9 @@ const mappedCardData = cardData.map((data) => {
       </p>
     </section>
 
-    <OneCardReading cards={mappedCardData} client:load />
+    <div class='max-w-5xl mx-auto mt-12'>
+      <OneCardReading cards={mappedCardData} client:load />
+    </div>
     
     <Divider/>
 

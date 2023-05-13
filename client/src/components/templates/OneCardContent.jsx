@@ -9,7 +9,7 @@ export default function OneCardContent({
   keywords = '',
 }) {
   return (
-    <article className='flex flex-col gap-4 md:w-2/3 lg:w-1/2 md:mx-auto bg-palette-c-darker p-4 md:p-12 rounded-sm'>
+    <article className='flex flex-col gap-4'>
       <div className='text-center'>
         <CardPlaceholder />
         <h3 className='text-xl md:text-3xl mt-4'>{title}</h3>

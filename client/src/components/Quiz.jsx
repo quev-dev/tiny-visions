@@ -1,21 +1,21 @@
 import { useState } from 'react';
-import Divider from './Divider.jsx'
+import Divider from './Divider.jsx';
 
-function Quiz({quiz}) {
+function Quiz({ quiz }) {
   const [quizAnswers, setQuizAnswers] = useState({});
 
-  function submit(e){
+  function submit(e) {
     const valid = quiz.every((item) => {
-      return quizAnswers[item.id] ? true : false
-    })
-    if(!valid){
-      alert("Please make sure you answer all questions.")
-      e.preventDefault()
+      return quizAnswers[item.id] ? true : false;
+    });
+    if (!valid) {
+      alert('Please make sure you answer all questions.');
+      e.preventDefault();
     }
   }
 
-  function onChange(value, index){
-    setQuizAnswers({...quizAnswers, [index]:value})
+  function onChange(value, index) {
+    setQuizAnswers({ ...quizAnswers, [index]: value });
   }
 
   return (
@@ -23,26 +23,38 @@ function Quiz({quiz}) {
       <ul>
         {quiz.map((item) => {
           return (
-            <li key={`li-${item.id}`} className="mb-6">
+            <li key={`li-${item.id}`} className='mb-6'>
               <p className='mb-4'>{item.question}</p>
 
               <fieldset className='mb-6 mx-8'>
-              {item.options.map((option, index) => {
-                return (
+                {item.options.map((option, index) => {
+                  return (
                     <label key={index} className='block mb-2'>
-                      <input className='peer' type="radio" name={item.id} value={index} onChange={(e) => {onChange(e.target.value, item.id)}} />
-                      <span className='ml-2 peer-checked:text-palette-c-accent'>{option.answer}</span>
+                      <input
+                        className='peer'
+                        type='radio'
+                        name={item.id}
+                        value={index}
+                        onChange={(e) => {
+                          onChange(e.target.value, item.id);
+                        }}
+                      />
+                      <span className='ml-2 peer-checked:text-palette-c-accent'>
+                        {option.answer}
+                      </span>
                     </label>
-                )
-              })}
+                  );
+                })}
               </fieldset>
               <Divider />
             </li>
-          )
+          );
         })}
       </ul>
       <div className='w-full flex items-center'>
-        <button className='mx-auto px-4 py-1 bg-palette-c-accent rounded'>Submit</button>
+        <button className='mx-auto px-4 py-1 bg-palette-c-accent rounded'>
+          Submit
+        </button>
       </div>
     </form>
   );
