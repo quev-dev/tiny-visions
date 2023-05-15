@@ -20,7 +20,7 @@ export default function OneCardReading({ cards }) {
       {!startQuiz && (
         <button
           onClick={drawCard}
-          class='rounded-md py-2 px-8 bg-palette-c-accent'
+          className='rounded-md py-2 px-8 bg-palette-c-accent'
         >
           Begin Reading
         </button>
