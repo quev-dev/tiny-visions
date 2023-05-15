@@ -2,10 +2,18 @@
 import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.jsx';
 import Divider from '../../components/Divider.jsx';
-
 import CardPlaceholder from '../../components/templates/CardPlaceholder';
+import ThreeCardReading from "../../components/ThreeCardReading.jsx";
 
 import '../../styles/init.css';
+
+const cardData = await Astro.glob("../../content/markdown/cards/*.md");
+const mappedCardData = cardData.map((data) => {
+  return {
+    frontmatter: data.frontmatter,
+    content: data.rawContent(),
+  }
+})
 ---
 
 <Layout title='Tiny Visions - Three Card Reading'>
@@ -43,11 +51,9 @@ import '../../styles/init.css';
       </p>
     </section>
 
-    <section class="flex flex-col gap-4 m-12 items-center justify-center">
-      <button class='rounded-md py-2 px-8 bg-palette-c-accent text-palette-c-light'>
-        Begin Reading
-      </button>
-    </section>
+    <div class='max-w-5xl mx-auto mt-12'>
+      <ThreeCardReading cards={mappedCardData} client:load />
+    </div>
 
     <Divider/>
 
