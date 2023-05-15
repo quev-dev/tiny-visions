@@ -31,18 +31,18 @@ const mappedCardData = cardData.map((data) => {
     <article class='md:w-1/2 flex flex-wrap gap-8 m-12 mb-0 items-around justify-around'>
       <div>
         <CardPlaceholder/>
-        <p class='text-center my-6'>Tarot</p>
+        <p class='text-center my-6'>PAST</p>
       </div>
       <div>
         <CardPlaceholder/>
-        <p class='text-center my-6'>Tarot</p>
+        <p class='text-center my-6'>PRESENT</p>
       </div>
       <div>
         <CardPlaceholder/>
-        <p class='text-center my-6'>Tarot</p>
+        <p class='text-center my-6'>FUTURE</p>
       </div>
     </article>
-    <section class='flex flex-col gap-4 m-12 mt-4 items-center justify-center'>
+    <section class='flex flex-col gap-4 mx-12 mt-4 items-center justify-center'>
       <p class='md:w-1/2'>
         The first card symbolizes the echoes of past events and circumstances which have shaped your present existence. 
         The second card, representing the ever-shifting present, may reveal knowledge and obstacles standing in your way. 
@@ -51,7 +51,7 @@ const mappedCardData = cardData.map((data) => {
       </p>
     </section>
 
-    <div class='max-w-5xl mx-auto mt-12'>
+    <div class='max-w-5xl mx-auto'>
       <ThreeCardReading cards={mappedCardData} client:load />
     </div>
 

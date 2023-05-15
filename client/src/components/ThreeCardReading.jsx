@@ -34,13 +34,7 @@ export default function OneCardReading({ cards }) {
 
       {startQuiz && (
         <div>
-          {drawnCards && (
-            <ThreeCardContent
-              card1={drawnCards[0]}
-              card2={drawnCards[1]}
-              card3={drawnCards[3]}
-            />
-          )}
+          {drawnCards && <ThreeCardContent cardsToDisplay={drawnCards} />}
         </div>
       )}
     </section>

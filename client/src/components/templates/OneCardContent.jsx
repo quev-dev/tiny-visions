@@ -1,5 +1,6 @@
 import CardPlaceholder from './CardPlaceholder.jsx';
 import Divider from '../Divider.jsx';
+import Disclaimer from '../other/Disclaimer.jsx';
 
 export default function OneCardContent({
   text = '',
@@ -12,11 +13,13 @@ export default function OneCardContent({
     <article className='flex flex-col gap-4'>
       <div className='text-center'>
         <CardPlaceholder />
-        <h3 className='text-xl md:text-3xl mt-4'>{title}</h3>
+        <h3 className='text-xl md:text-3xl mt-4 text-palette-c-accent'>
+          {title}
+        </h3>
       </div>
       <Divider />
       <section className='flex flex-col gap-4'>
-        <h4 className='text-sm md:text-xl'>Interpretation:</h4>
+        <h4 className='text-sm md:text-xl'>Keywords:</h4>
         <ul className='flex flex-col gap-1 md:gap-2'>
           <li>
             <b>Upright: </b>
@@ -27,16 +30,25 @@ export default function OneCardContent({
             {reverse}
           </li>
         </ul>
-        <p>{text}</p>
       </section>
-      <Divider />
       <section className='flex flex-col gap-4'>
         <h4 className='text-sm md:text-xl'>In relation to you:</h4>
         <p>{reading}</p>
       </section>
-      <a className='text-palette-c-accent' href={`tarots/${title}`}>
-        Learn more about {title}
-      </a>
+      <div className='my-12 md:my-16'>
+        <Divider />
+      </div>
+      <section className='flex flex-col gap-2'>
+        <h4 className='text-sm md:text-xl'>Furthermore:</h4>
+        <Disclaimer />
+        <p>
+          - Learn more about
+          <a className='text-palette-c-accent' href={`tarots/${title}`}>
+            {' ' + title}
+          </a>
+          .
+        </p>
+      </section>
     </article>
   );
 }
