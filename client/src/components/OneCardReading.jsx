@@ -16,7 +16,7 @@ export default function OneCardReading({ cards }) {
   };
 
   return (
-    <section className='flex flex-col gap-4 m-12 items-center justify-center'>
+    <section className='flex flex-col gap-4 my-12 items-center justify-center'>
       {!startQuiz && (
         <button
           onClick={drawCard}
@@ -30,7 +30,6 @@ export default function OneCardReading({ cards }) {
         <div>
           {drawnCard && (
             <OneCardContent
-              text={drawnCard.content}
               title={drawnCard.frontmatter.title}
               keywords={drawnCard.frontmatter.keywords}
               reading={drawnCard.frontmatter.reading}

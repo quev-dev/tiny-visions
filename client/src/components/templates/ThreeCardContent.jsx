@@ -13,7 +13,7 @@ export default function ThreeCardContent({ cardsToDisplay }) {
               <br />
               <div className='text-center flex flex-col gap-2'>
                 <h2 className='text-lg md:text-2xl font-bold'>
-                  {index === 0 ? 'PAST' : index === 1 ? 'PRESENT' : 'FUTURE'}
+                  {index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}
                 </h2>
                 <CardPlaceholder />
                 <h3 className='text-xl md:text-3xl mt-4 text-palette-c-accent'>
@@ -21,7 +21,6 @@ export default function ThreeCardContent({ cardsToDisplay }) {
                 </h3>
               </div>
               <div className='flex flex-col gap-2'>
-                <h4 className='text-sm md:text-xl'>Keywords:</h4>
                 <p>
                   <b>Upright:</b> {card.frontmatter.keywords}
                 </p>
@@ -30,7 +29,6 @@ export default function ThreeCardContent({ cardsToDisplay }) {
                 </p>
               </div>
               <div className='flex flex-col gap-2'>
-                <h4 className='text-sm md:text-xl'>Interpretation:</h4>
                 <p>{card.frontmatter.reading}</p>
               </div>
             </li>
@@ -41,7 +39,6 @@ export default function ThreeCardContent({ cardsToDisplay }) {
         <Divider />
       </div>
       <aside className='flex flex-col gap-4'>
-        <h4 className='text-sm md:text-xl'>Furthermore:</h4>
         <Disclaimer />
         <p>
           If you'd like to learn more about each of the cards you received, you

@@ -3,7 +3,6 @@ import Divider from '../Divider.jsx';
 import Disclaimer from '../other/Disclaimer.jsx';
 
 export default function OneCardContent({
-  text = '',
   title = '',
   reading = '',
   reverse = '',
@@ -19,7 +18,6 @@ export default function OneCardContent({
       </div>
       <Divider />
       <section className='flex flex-col gap-4'>
-        <h4 className='text-sm md:text-xl'>Keywords:</h4>
         <ul className='flex flex-col gap-1 md:gap-2'>
           <li>
             <b>Upright: </b>
@@ -32,14 +30,12 @@ export default function OneCardContent({
         </ul>
       </section>
       <section className='flex flex-col gap-4'>
-        <h4 className='text-sm md:text-xl'>In relation to you:</h4>
         <p>{reading}</p>
       </section>
       <div className='my-12 md:my-16'>
         <Divider />
       </div>
       <section className='flex flex-col gap-2'>
-        <h4 className='text-sm md:text-xl'>Furthermore:</h4>
         <Disclaimer />
         <p>
           - Learn more about
