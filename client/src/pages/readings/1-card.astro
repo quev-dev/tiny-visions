@@ -3,47 +3,57 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.jsx';
 import Divider from '../../components/Divider.jsx';
 import CardPlaceholder from '../../components/templates/CardPlaceholder';
-import OneCardReading from "../../components/OneCardReading.jsx";
+import OneCardReading from '../../components/OneCardReading.jsx';
 
 import '../../styles/init.css';
 
-const fileNameREGEX = /\/([^\/]+)\.[^\.]+$/;
-const cardData = await Astro.glob("../../content/markdown/cards/*.md");
+const cardData = await Astro.glob('../../content/markdown/cards/*.md');
 const mappedCardData = cardData.map((data) => {
   return {
     frontmatter: data.frontmatter,
     content: data.rawContent(),
-  }
-})
+  };
+});
 ---
 
 <Layout title='Tiny Visions - One Card Reading'>
-  <Navbar client:load activeLink="readings" />
-  <main class='bg-palette-c-dark text-palette-c-light sm:text-2xl'>
-    <Divider/>
-    <header class='flex flex-col items-center justify-center m-4'>
-      <h2 class='text-2xl sm:text-4xl text-center font-bold text-palette-c-accent'>One Card Reading</h2>
-      <p class='md:w-1/2 m-8 sm:text-2xl text-left'>
-        This traditional approach provides you with a quick, simple insight. One single tarot card is drawn, allowing you to interpret its symbolism.
+  <Navbar client:load activeLink='readings' />
+  <main
+    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
+  >
+    <Divider />
+    <header class='my-12 max-w-4xl mx-auto'>
+      <h2
+        class='text-center text-2xl sm:text-4xl mb-16 font-bold text-palette-c-accent'
+      >
+        One Card Reading
+      </h2>
+      <p class='mb-2'>
+        This traditional approach provides you with a quick, simple insight. One
+        single tarot card is drawn, allowing you to interpret its symbolism.
       </p>
     </header>
-    <Divider/>
+    <Divider />
 
-    <section class='flex flex-col gap-4 m-12 items-center justify-center'>
-      <CardPlaceholder/>
+    <section
+      class='flex flex-col gap-4 mt-12 max-w-5xl mx-auto items-center justify-center'
+    >
+      <CardPlaceholder />
       <p class='text-center mb-6'>Tarot</p>
-      <p class='md:w-1/2'>
-        Upon drawing a card, take a moment to study its image. Consider the themes which catch your eye, and attempt to reflect on how they may apply to you. Recount that tarot cards can aid your journey in self-reflection, and trust in the potential wisdom they offer. 
+      <p class='mb-2'>
+        Upon drawing a card, take a moment to study its image. Consider the
+        themes which catch your eye, and attempt to reflect on how they may
+        apply to you. Recount that tarot cards can aid your journey in
+        self-reflection, and trust in the potential wisdom they offer.
       </p>
     </section>
 
     <div class='max-w-5xl mx-auto mt-12'>
       <OneCardReading cards={mappedCardData} client:load />
     </div>
-    
-    <Divider/>
+
+    <Divider />
 
     <div class='mb-12'></div>
-
   </main>
 </Layout>

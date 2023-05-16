@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
 import Divider from '../components/Divider.jsx';
-import Quiz from '@components/Quiz.jsx'
+import Quiz from '@components/Quiz.jsx';
 
 import quiz from '@content/json/quiz.json';
 
@@ -10,8 +10,8 @@ import '../styles/init.css';
 ---
 
 <Layout title='Tiny Visions - Quiz'>
-  <Navbar client:load activeLink="quiz" />
-  <Divider/>
+  <Navbar client:load activeLink='quiz' />
+  <Divider />
   <main
     class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
   >
@@ -21,17 +21,20 @@ import '../styles/init.css';
       >
         Quiz
       </h2>
-      <p class="mb-2">
-        Embark on a fantastical quest, facing difficult challenges that will test your very character.
+      <p class='mb-2'>
+        Embark on a fantastical quest, facing difficult challenges that will
+        test your very character.
       </p>
-      <p class="mb-2">
-        It is crucial to remember that there are no correct answers on this quest. Harness your judgement and make decisions in line with your beliefs.
+      <p class='mb-2'>
+        It is crucial to remember that there are no correct answers on this
+        quest. Harness your judgement and make decisions in line with your
+        beliefs.
       </p>
       <p>
         Upon completion, you will receive a tarot card attuned to your choices.
       </p>
     </header>
-    <Divider/>
+    <Divider />
     <section class='max-w-5xl mx-auto mt-12'>
       <Quiz client:load quiz={quiz} />
     </section>
