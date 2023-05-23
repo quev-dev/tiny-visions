@@ -21,7 +21,7 @@ export default function Navbar({ activeLink = '' }) {
         </button>
 
         {showDropdown && (
-          <div className='text-palette-c-accent bg-palette-c-dark w-full absolute text-right right-0 top-12 pb-4 px-4'>
+          <div className='-z-10 text-palette-c-accent bg-palette-c-dark w-full absolute text-right right-0 top-12 pb-4 px-4'>
             <ul className='flex flex-col gap-1'>
               <li>
                 {activeLink === 'quiz' ? (

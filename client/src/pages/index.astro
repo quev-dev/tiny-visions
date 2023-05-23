@@ -16,17 +16,17 @@ import '../styles/init.css';
     <Title />
 
     <Divider />
-    <CardArticle title='Quiz' link='/quiz' reverse={true}
+    <CardArticle client:load title='Quiz' link='/quiz' reverse={true}
 			description="Embark on a fantastical quest, tackling challenges that will test your character. Faced with ten scenarios, you may choose between three responses. Following each scenario, keep in mind that there are no right answers. Use the best of your judgement." 
 		/>
 
     <Divider />
-    <CardArticle title='Readings' link='/readings' reverse={false} 
+    <CardArticle client:load title='Readings' link='/readings' reverse={false} 
 			description="Follow a more traditional path with a classic tarot card reading. You may choose between a one-card reading or a three-card reading."
 		/>
 
     <Divider />
-    <CardArticle title='Tarots' link='/tarots' reverse={true} 
+    <CardArticle client:load title='Tarots' link='/tarots' reverse={true} 
 			description="Examine a catalogue of tarot cards, revealing their designs and interpretations. It is possible to encounter each tarot card after a quiz with the appropriate responses, or from having them drawn during a reading."
 		/>
 

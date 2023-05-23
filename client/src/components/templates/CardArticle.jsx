@@ -1,15 +1,23 @@
+import { useEffect } from 'react';
 import ImgPlaceholder from '../../components/templates/ImgPlaceholder.jsx';
-import cardMoon from '../../content/images/cardMoon.png';
+import 'aos/dist/aos.css';
 
 export default function CardArticle({
-  image = cardMoon,
   title = 'title',
   link = '/',
   description = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur molestias ipsa sed soluta vitae asperiores nulla porro, corrupti praesentium quam nemo eum enim, optio voluptatum non quaerat reiciendis libero similique!',
   reverse = false,
 }) {
+  useEffect(() => {
+    import('aos').then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   return (
     <article
+      data-aos='fade-right'
+      data-aos-once={true}
       className={`flex flex-col 
       ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
       my-16 gap-24 justify-center items-center px-4 sm:px-12 sm:text-2xl`}

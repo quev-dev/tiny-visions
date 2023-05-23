@@ -13,6 +13,11 @@ export default function OneCardReading({ cards }) {
     const card = cards[Math.floor(Math.random() * cards.length)];
     setDrawnCard(card);
     setStartQuiz(true);
+
+    setTimeout(() => {
+      const scrollTarget = document.querySelector('#scroll-target');
+      scrollTarget.scrollIntoView({ behavior: 'smooth' });
+    }, 50);
   };
 
   return (
@@ -27,7 +32,11 @@ export default function OneCardReading({ cards }) {
       )}
 
       {startQuiz && (
-        <div>
+        <div className='relative'>
+          <span
+            id='scroll-target'
+            className='absolute -top-16 md:-top-24'
+          ></span>
           {drawnCard && (
             <OneCardContent
               title={drawnCard.frontmatter.title}

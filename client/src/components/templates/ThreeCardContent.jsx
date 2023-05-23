@@ -1,8 +1,16 @@
+import { useEffect } from 'react';
 import CardPlaceholder from './CardPlaceholder.jsx';
 import Divider from '../Divider.jsx';
 import Disclaimer from '../other/Disclaimer.jsx';
+import 'aos/dist/aos.css';
 
 export default function ThreeCardContent({ cardsToDisplay }) {
+  useEffect(() => {
+    import('aos').then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   return (
     <article>
       <div>
@@ -11,7 +19,11 @@ export default function ThreeCardContent({ cardsToDisplay }) {
             <li className='flex flex-col gap-4' key={card.frontmatter.title}>
               <Divider />
               <br />
-              <div className='text-center flex flex-col gap-2'>
+              <div
+                data-aos='fade-up'
+                data-aos-once={true}
+                className='text-center flex flex-col gap-2'
+              >
                 <h2 className='text-lg md:text-2xl font-bold'>
                   {index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}
                 </h2>
@@ -20,7 +32,11 @@ export default function ThreeCardContent({ cardsToDisplay }) {
                   {card.frontmatter.title}
                 </h3>
               </div>
-              <div className='flex flex-col gap-2'>
+              <div
+                data-aos='fade-right'
+                data-aos-once={true}
+                className='flex flex-col gap-2'
+              >
                 <p>
                   <b>Upright:</b> {card.frontmatter.keywords}
                 </p>
@@ -28,7 +44,11 @@ export default function ThreeCardContent({ cardsToDisplay }) {
                   <b>Reverse:</b> {card.frontmatter.reverse}
                 </p>
               </div>
-              <div className='flex flex-col gap-2'>
+              <div
+                data-aos='fade-right'
+                data-aos-once={true}
+                className='flex flex-col gap-2'
+              >
                 <p>{card.frontmatter.reading}</p>
               </div>
             </li>
@@ -38,7 +58,11 @@ export default function ThreeCardContent({ cardsToDisplay }) {
       <div className='my-12 md:my-16'>
         <Divider />
       </div>
-      <aside className='flex flex-col gap-4'>
+      <aside
+        data-aos='fade-right'
+        data-aos-once={true}
+        className='flex flex-col gap-4'
+      >
         <Disclaimer />
         <p>
           If you'd like to learn more about each of the cards you received, you
