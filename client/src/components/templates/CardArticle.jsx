@@ -14,9 +14,11 @@ export default function CardArticle({
     });
   }, []);
 
+  const dataAOS = reverse ? 'fade-left' : 'fade-right';
+
   return (
     <article
-      data-aos='fade-right'
+      data-aos={dataAOS}
       data-aos-once={true}
       className={`flex flex-col 
       ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}

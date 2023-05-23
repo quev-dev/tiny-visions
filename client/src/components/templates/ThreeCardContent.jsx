@@ -20,7 +20,7 @@ export default function ThreeCardContent({ cardsToDisplay }) {
               <Divider />
               <br />
               <div
-                data-aos='fade-up'
+                data-aos='fade-right'
                 data-aos-once={true}
                 className='text-center flex flex-col gap-2'
               >
@@ -55,7 +55,7 @@ export default function ThreeCardContent({ cardsToDisplay }) {
           ))}
         </ul>
       </div>
-      <div className='my-12 md:my-16'>
+      <div className='my-8 md:my-12'>
         <Divider />
       </div>
       <aside

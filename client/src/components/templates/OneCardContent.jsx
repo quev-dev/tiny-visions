@@ -18,13 +18,15 @@ export default function OneCardContent({
 
   return (
     <article className='flex flex-col gap-4'>
-      <div data-aos='fade-up' data-aos-once={true} className='text-center'>
+      <div data-aos='fade-right' data-aos-once={true} className='text-center'>
         <CardPlaceholder />
         <h3 className='text-xl md:text-3xl mt-4 text-palette-c-accent'>
           {title}
         </h3>
       </div>
-      <Divider />
+      <div className='my-8 md:my-12'>
+        <Divider />
+      </div>
       <section
         data-aos='fade-right'
         data-aos-once={true}
@@ -48,7 +50,7 @@ export default function OneCardContent({
       >
         <p>{reading}</p>
       </section>
-      <div className='my-12 md:my-16'>
+      <div className='my-8 md:my-12'>
         <Divider />
       </div>
       <section

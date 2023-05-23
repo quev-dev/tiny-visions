@@ -10,7 +10,7 @@ export default function TarotCard() {
   }, []);
 
   return (
-    <div data-aos='fade-up' data-aos-once={true}>
+    <div data-aos='fade-right' data-aos-once={true}>
       <CardPlaceholder />
       <h3 className='mt-6'>Title</h3>
     </div>
