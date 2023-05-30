@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import CardPlaceholder from './CardPlaceholder.jsx';
 import Divider from '../Divider.jsx';
 import Disclaimer from '../other/Disclaimer.jsx';
+import 'aos/dist/aos.css';
 
 export default function OneCardContent({
   title = '',
@@ -8,16 +10,28 @@ export default function OneCardContent({
   reverse = '',
   keywords = '',
 }) {
+  useEffect(() => {
+    import('aos').then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   return (
     <article className='flex flex-col gap-4'>
-      <div className='text-center'>
+      <div data-aos='fade-right' data-aos-once={true} className='text-center'>
         <CardPlaceholder />
         <h3 className='text-xl md:text-3xl mt-4 text-palette-c-accent'>
           {title}
         </h3>
       </div>
-      <Divider />
-      <section className='flex flex-col gap-4'>
+      <div className='my-8 md:my-12'>
+        <Divider />
+      </div>
+      <section
+        data-aos='fade-right'
+        data-aos-once={true}
+        className='flex flex-col gap-4'
+      >
         <ul className='flex flex-col gap-1 md:gap-2'>
           <li>
             <b>Upright: </b>
@@ -29,13 +43,21 @@ export default function OneCardContent({
           </li>
         </ul>
       </section>
-      <section className='flex flex-col gap-4'>
+      <section
+        data-aos='fade-right'
+        data-aos-once={true}
+        className='flex flex-col gap-4'
+      >
         <p>{reading}</p>
       </section>
-      <div className='my-12 md:my-16'>
+      <div className='my-8 md:my-12'>
         <Divider />
       </div>
-      <section className='flex flex-col gap-2'>
+      <section
+        data-aos='fade-right'
+        data-aos-once={true}
+        className='flex flex-col gap-2'
+      >
         <Disclaimer />
         <p>
           - Learn more about

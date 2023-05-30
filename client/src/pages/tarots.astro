@@ -28,7 +28,7 @@ const cards = new Array(22).fill(0)
     </header>
     <Divider />
     <section class='tarot-grid text-center grid max-w-6xl gap-12 mx-auto my-16'>
-      {cards.map(card => <TarotCard />)}
+      {cards.map(card => <TarotCard client:load />)}
     </section>
     <Divider />
   </main>

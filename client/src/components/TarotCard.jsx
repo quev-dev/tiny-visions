@@ -1,11 +1,18 @@
-import CardPlaceholder from "./templates/CardPlaceholder";
+import { useEffect } from 'react';
+import CardPlaceholder from './templates/CardPlaceholder';
+import 'aos/dist/aos.css';
 
 export default function TarotCard() {
+  useEffect(() => {
+    import('aos').then((AOS) => {
+      AOS.default.init();
+    });
+  }, []);
+
   return (
-    <div>
+    <div data-aos='fade-right' data-aos-once={true}>
       <CardPlaceholder />
       <h3 className='mt-6'>Title</h3>
     </div>
   );
 }
-
