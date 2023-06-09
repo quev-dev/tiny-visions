@@ -3,6 +3,8 @@ export interface Props {
   title: string;
 }
 
+import { SEOMetadata } from 'astro-seo-metadata';
+
 const { title } = Astro.props;
 ---
 
@@ -11,30 +13,40 @@ const { title } = Astro.props;
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.png' />
     <meta name='generator' content={Astro.generator} />
-    <title>{title}</title>
+    <meta name='theme-color' content='#e14a7c' />
+
+    <SEOMetadata
+      siteName='Tiny Visions'
+      description='Delve into an immersive world, exploring the mysteries of the universe as you gain insights into your past, present, and future. Our site offers a unique tarot reading experience, where you may explore tarot cards through a quiz, traditional reading, or catalogue.'
+      favicon='/favicon.png'
+      type='website'
+      title={title}
+      astroSitemap={true}
+      astroGenerator={true}
+      canonicalUrl={Astro.url.toString()}
+    />
   </head>
   <body class='bg-palette-c-dark text-palette-c-light overflow-x-hidden'>
     <slot />
+    <style is:global>
+      :root {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        overflow-x: hidden;
+      }
+      code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+    </style>
   </body>
 </html>
-<style is:global>
-  :root {
-    --accent: 124, 58, 237;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      white 60%
-    );
-  }
-  html {
-    font-family: system-ui, sans-serif;
-    overflow-x: hidden;
-  }
-  code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-  }
-</style>
