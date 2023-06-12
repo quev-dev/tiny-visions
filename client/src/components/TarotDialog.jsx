@@ -4,11 +4,10 @@ import {dialogState, dialogContent} from '../store/tarotStore'
 import Divider from './Divider';
 import TarotCard from './TarotCard';
 
-export default function TarotDialog(props) {
+export default function TarotDialog() {
   const dialogRef = useRef(null);
   const $dialogState = useStore(dialogState);
   const $dialogContent = useStore(dialogContent);
-  console.log($dialogContent)
   useEffect(() => {
     if (dialogRef.current){
       if($dialogState){
@@ -18,10 +17,9 @@ export default function TarotDialog(props) {
       }
     }
   }, [$dialogState]);
-  // console.log($dialogState)
   return (
-    <dialog className='backdrop:bg-zinc-900/80 bg-palette-c-dark text-palette-c-light p-12' ref={dialogRef} onClose={() => {dialogState.set(false)}}>
-      <div className='my-12 max-w-5xl sm:text-2xl flex items-center justify-center gap-12'>
+    <dialog className='backdrop:cursor-pointer backdrop:bg-zinc-900/80 bg-palette-c-dark text-palette-c-light p-12' ref={dialogRef} onClose={() => {dialogState.set(false)}} onClick={() => {dialogRef?.current.close()}}>
+      <div className='my-12 max-w-5xl sm:text-2xl flex items-center justify-center gap-12' onClick={(e) => {e.stopPropagation()}}>
         <section>
           <Divider />
           <h2 className='text-center text-2xl sm:text-4xl font-bold text-palette-c-accent my-6'>
@@ -42,7 +40,6 @@ export default function TarotDialog(props) {
         </section>
         <section className='min-w-[270px] min-h-[489px]'>
           <TarotCard title={$dialogContent?.frontmatter?.title} />
-          {/* <CardPlaceholder /> */}
         </section>
       </div>
     </dialog>

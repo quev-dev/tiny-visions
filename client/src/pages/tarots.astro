@@ -4,11 +4,9 @@ import Navbar from '../components/Navbar.jsx';
 import Divider from '../components/Divider';
 
 import '../styles/init.css';
-import TarotCard from '../components/TarotCard';
 import TarotCardButton from '../components/TarotCardButton'
 import TarotDialog from '../components/TarotDialog'
 
-// const cards = new Array(22).fill(0)
 const cards = await Astro.glob('../content/markdown/cards/*.md');
 const mappedCardData = cards.map((data) => {
   return {
