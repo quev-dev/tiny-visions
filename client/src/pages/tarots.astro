@@ -5,8 +5,17 @@ import Divider from '../components/Divider';
 
 import '../styles/init.css';
 import TarotCard from '../components/TarotCard';
+import TarotCardButton from '../components/TarotCardButton'
+import TarotDialog from '../components/TarotDialog'
 
-const cards = new Array(22).fill(0)
+// const cards = new Array(22).fill(0)
+const cards = await Astro.glob('../content/markdown/cards/*.md');
+const mappedCardData = cards.map((data) => {
+  return {
+    frontmatter: data.frontmatter,
+    content: data.rawContent(),
+  };
+});
 ---
 
 <Layout title='Tiny Visions - Tarots'>
@@ -28,8 +37,13 @@ const cards = new Array(22).fill(0)
     </header>
     <Divider />
     <section class='tarot-grid text-center grid max-w-6xl gap-12 mx-auto my-16'>
-      {cards.map(card => <TarotCard client:load />)}
+      {mappedCardData.map(card => {
+        return (
+          <TarotCardButton info={card} client:load />
+        )
+      })}
     </section>
     <Divider />
   </main>
+  <TarotDialog client:load />
 </Layout>
