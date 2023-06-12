@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Divider from './Divider.jsx';
+import QuizQuestions from './templates/QuizQuestions.jsx';
 
 function Quiz({ quiz }) {
   const [quizAnswers, setQuizAnswers] = useState({});
@@ -19,44 +20,47 @@ function Quiz({ quiz }) {
   }
 
   return (
-    <form onSubmit={submit} action='/quiz/results'>
-      <ul>
-        {quiz.map((item) => {
-          return (
-            <li key={`li-${item.id}`} className='mb-6'>
-              <p className='mb-4'>{item.question}</p>
+    <div>
+      <QuizQuestions quiz={quiz} />
+      <form onSubmit={submit} action='/quiz/results'>
+        <ul>
+          {quiz.map((item) => {
+            return (
+              <li key={`li-${item.id}`} className='mb-6'>
+                <p className='mb-4'>{item.question}</p>
 
-              <fieldset className='mb-6 mx-8'>
-                {item.options.map((option, index) => {
-                  return (
-                    <label key={index} className='block mb-2'>
-                      <input
-                        className='peer'
-                        type='radio'
-                        name={item.id}
-                        value={index}
-                        onChange={(e) => {
-                          onChange(e.target.value, item.id);
-                        }}
-                      />
-                      <span className='ml-2 peer-checked:text-palette-c-accent'>
-                        {option.answer}
-                      </span>
-                    </label>
-                  );
-                })}
-              </fieldset>
-              <Divider />
-            </li>
-          );
-        })}
-      </ul>
-      <div className='w-full flex items-center'>
-        <button className='mx-auto px-4 py-1 bg-palette-c-accent rounded'>
-          Submit
-        </button>
-      </div>
-    </form>
+                <fieldset className='mb-6 mx-8'>
+                  {item.options.map((option, index) => {
+                    return (
+                      <label key={index} className='block mb-2'>
+                        <input
+                          className='peer'
+                          type='radio'
+                          name={item.id}
+                          value={index}
+                          onChange={(e) => {
+                            onChange(e.target.value, item.id);
+                          }}
+                        />
+                        <span className='ml-2 peer-checked:text-palette-c-accent'>
+                          {option.answer}
+                        </span>
+                      </label>
+                    );
+                  })}
+                </fieldset>
+                <Divider />
+              </li>
+            );
+          })}
+        </ul>
+        <div className='w-full flex items-center'>
+          <button className='mx-auto px-4 py-1 bg-palette-c-accent rounded'>
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 
