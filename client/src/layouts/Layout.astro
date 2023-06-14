@@ -4,6 +4,7 @@ export interface Props {
 }
 
 import { SEOMetadata } from 'astro-seo-metadata';
+import imgThumbnail from '/thumbnail.webp';
 
 const { title } = Astro.props;
 ---
@@ -18,9 +19,10 @@ const { title } = Astro.props;
 
     <SEOMetadata
       siteName='Tiny Visions'
-      description='Delve into an immersive world, exploring the mysteries of the universe as you gain insights into your past, present, and future. Our site offers a unique tarot reading experience, where you may explore tarot cards through a quiz, traditional reading, or catalogue.'
+      description='Delve into an immersive world as you gain insights into your past, present, and future. Tiny Visions is a unique tarot card experience, where you may explore tarots through a quiz, traditional reading, or catalogue.'
       favicon='/favicon.png'
       type='website'
+      image={imgThumbnail}
       title={title}
       astroSitemap={true}
       astroGenerator={true}
