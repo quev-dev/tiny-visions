@@ -1,3 +1,6 @@
+@import url('./_animations.css');
+@import url('./_transitions.css');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';

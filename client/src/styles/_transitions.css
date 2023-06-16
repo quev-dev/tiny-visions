@@ -1,0 +1,66 @@
+button:not(.tarot-button) {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+}
+
+button:not(.tarot-button):hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 0px var(--cDarker);
+}
+
+button:not(.tarot-button):active {
+  transform: translateY(0px);
+}
+
+label span {
+  transition: color 0.15s ease;
+}
+
+li a,
+p a {
+  border-bottom: solid 2px transparent;
+  transition: border-bottom 0.15s ease;
+}
+li a:hover,
+p a:hover {
+  border-bottom: solid 2px var(--cAccent);
+}
+
+.card-article-link {
+  border: solid 4px transparent;
+  transition: border 0.15s ease;
+  cursor: pointer;
+}
+.card-article-link:hover {
+  border: solid 4px var(--cAccent);
+}
+.card-article-link a p {
+  transition: color 0.15s ease;
+}
+.card-article-link:hover a p {
+  color: var(--cAccent);
+}
+
+.tarot-button {
+  position: relative;
+}
+.tarot-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: solid 4px transparent;
+  border-radius: 0.125rem;
+  transition: border 0.15s ease;
+}
+.tarot-button:hover::before {
+  border: solid 4px var(--cAccent);
+}
+.tarot-button h3 {
+  transition: color 0.15s ease;
+}
+.tarot-button:hover h3 {
+  color: var(--cAccent);
+}
