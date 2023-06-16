@@ -29,9 +29,9 @@ function Quiz({ quiz }) {
               <fieldset className='mb-6 mx-8'>
                 {item.options.map((option, index) => {
                   return (
-                    <label key={index} className='block mb-2'>
+                    <label key={index} className='block mb-2 cursor-pointer'>
                       <input
-                        className='peer'
+                        className='peer cursor-pointer'
                         type='radio'
                         name={item.id}
                         value={index}
