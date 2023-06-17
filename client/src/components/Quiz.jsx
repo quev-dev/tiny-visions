@@ -21,15 +21,19 @@ function Quiz({ quiz }) {
   return (
     <form onSubmit={submit} action='/quiz/results'>
       <ul>
-        {quiz.map((item) => {
+        {quiz.map((item, index) => {
           return (
             <li key={`li-${item.id}`} className='mb-6'>
+              <h5 className='font-bold text-center'>{index + 1}.</h5>
               <p className='mb-4'>{item.question}</p>
 
               <fieldset className='mb-6 mx-8'>
                 {item.options.map((option, index) => {
                   return (
-                    <label key={index} className='block mb-2 cursor-pointer'>
+                    <label
+                      key={index}
+                      className='mb-2 cursor-pointer flex flex-row'
+                    >
                       <input
                         className='peer cursor-pointer'
                         type='radio'

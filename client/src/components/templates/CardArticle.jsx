@@ -27,7 +27,7 @@ export default function CardArticle({
       <section className='max-w-2xl'>
         <p>{description}</p>
       </section>
-      <section className='relative'>
+      <section className='card-article-link relative'>
         <a href={link}>
           <ImgPlaceholder></ImgPlaceholder>
           <p className='absolute z-10 bottom-4 text-center bg-opacity-70 w-full'>

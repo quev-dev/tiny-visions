@@ -1,6 +1,6 @@
 import { useStore } from '@nanostores/react';
-import {useRef, useEffect} from 'react'
-import {dialogState, dialogContent} from '../store/tarotStore'
+import { useRef, useEffect } from 'react';
+import { dialogState, dialogContent } from '../store/tarotStore';
 import Divider from './Divider';
 import TarotCard from './TarotCard';
 
@@ -9,8 +9,8 @@ export default function TarotDialog() {
   const $dialogState = useStore(dialogState);
   const $dialogContent = useStore(dialogContent);
   useEffect(() => {
-    if (dialogRef.current){
-      if($dialogState){
+    if (dialogRef.current) {
+      if ($dialogState) {
         dialogRef.current.showModal();
       } else {
         dialogRef.current.close();
@@ -18,8 +18,22 @@ export default function TarotDialog() {
     }
   }, [$dialogState]);
   return (
-    <dialog className='backdrop:cursor-pointer backdrop:bg-zinc-900/80 bg-palette-c-dark text-palette-c-light p-12' ref={dialogRef} onClose={() => {dialogState.set(false)}} onClick={() => {dialogRef?.current.close()}}>
-      <div className='my-12 max-w-5xl sm:text-2xl flex items-center justify-center gap-12' onClick={(e) => {e.stopPropagation()}}>
+    <dialog
+      className='tarot-dialogue backdrop:cursor-pointer backdrop:bg-zinc-900/80 bg-palette-c-dark text-palette-c-light p-12'
+      ref={dialogRef}
+      onClose={() => {
+        dialogState.set(false);
+      }}
+      onClick={() => {
+        dialogRef?.current.close();
+      }}
+    >
+      <div
+        className='my-12 max-w-5xl sm:text-2xl flex items-center justify-center gap-12'
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <section>
           <Divider />
           <h2 className='text-center text-2xl sm:text-4xl font-bold text-palette-c-accent my-6'>
@@ -33,9 +47,7 @@ export default function TarotDialog() {
             <span className='text-palette-c-accent'>Reversed: </span>
             {$dialogContent?.frontmatter?.reverse}
           </p>
-          <p className='mb-6'>
-          {$dialogContent?.content}
-          </p>
+          <p className='mb-6'>{$dialogContent?.content}</p>
           <Divider />
         </section>
         <section className='min-w-[270px] min-h-[489px]'>
