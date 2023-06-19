@@ -51,15 +51,6 @@ export default function Navbar({ activeLink = '' }) {
                 )}
               </li>
             </ul>
-            <li>
-              {activeLink === 'login' ? (
-                <a href='/login' className='text-palette-c-accent'>
-                  Login
-                </a>
-              ) : (
-                <a href='/login'>Login</a>
-              )}
-            </li>
           </div>
         )}
       </ul>
@@ -73,7 +64,7 @@ export default function Navbar({ activeLink = '' }) {
           </a>
         </li>
 
-        <ul className='flex gap-8 mr-16'>
+        <ul className='flex gap-8'>
           <li>
             {activeLink === 'quiz' ? (
               <a href='/quiz' className='text-palette-c-accent'>
@@ -102,15 +93,6 @@ export default function Navbar({ activeLink = '' }) {
             )}
           </li>
         </ul>
-        <li>
-          {activeLink === 'login' ? (
-            <a href='/login' className='text-palette-c-accent'>
-              Login
-            </a>
-          ) : (
-            <a href='/login'>Login</a>
-          )}
-        </li>
       </ul>
     </nav>
   );
