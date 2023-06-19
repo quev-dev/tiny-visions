@@ -16,11 +16,13 @@ label span {
   transition: color 0.15s ease;
 }
 
+footer a,
 li a,
 p a {
   border-bottom: solid 2px transparent;
   transition: border-bottom 0.15s ease;
 }
+footer a:hover,
 li a:hover,
 p a:hover {
   border-bottom: solid 2px var(--cAccent);

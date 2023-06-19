@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-import Title from '../components/Title.jsx';
-import Navbar from '../components/Navbar.jsx';
-import Divider from '../components/Divider.jsx';
-import CardArticle from '../components/templates/CardArticle.jsx';
+import Title from '@components/Title.jsx';
+import Navbar from '@components/Navbar.jsx';
+import Divider from '@components/Divider.jsx';
+import CardArticle from '@components/templates/CardArticle.jsx';
+import Footer from '@components/Footer';
 
 import '../styles/init.css';
 ---
@@ -44,6 +45,7 @@ import '../styles/init.css';
 
     <Divider />
 
-    <div class='p-16'></div>
+    <div class='my-16'></div>
+    <Footer />
   </main>
 </Layout>

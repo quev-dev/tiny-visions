@@ -4,6 +4,7 @@ import Navbar from '../../components/Navbar.jsx';
 import Divider from '../../components/Divider.jsx';
 import CardPlaceholder from '../../components/templates/CardPlaceholder';
 import ThreeCardReading from '../../components/ThreeCardReading.jsx';
+import Footer from '../../components/Footer.jsx';
 
 import '../../styles/init.css';
 
@@ -19,7 +20,7 @@ const mappedCardData = cardData.map((data) => {
 <Layout title='Tiny Visions - Three Card Reading'>
   <Navbar client:load activeLink='readings' />
   <main
-    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
+    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-12'
   >
     <Divider />
     <header class='my-12 max-w-4xl mx-auto'>
@@ -71,7 +72,6 @@ const mappedCardData = cardData.map((data) => {
     </div>
 
     <Divider />
-
-    <div class='mb-12'></div>
   </main>
+  <Footer />
 </Layout>

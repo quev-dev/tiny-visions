@@ -1,11 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
-import Divider from '../components/Divider';
+import Divider from '../components/Divider.jsx';
+import Footer from '../components/Footer.jsx';
 
 import '../styles/init.css';
-import TarotCardButton from '../components/TarotCardButton'
-import TarotDialog from '../components/TarotDialog'
+import TarotCardButton from '../components/TarotCardButton';
+import TarotDialog from '../components/TarotDialog';
 
 const cards = await Astro.glob('../content/markdown/cards/*.md');
 const mappedCardData = cards.map((data) => {
@@ -17,10 +18,10 @@ const mappedCardData = cards.map((data) => {
 ---
 
 <Layout title='Tiny Visions - Tarots'>
-  <Navbar client:load activeLink="tarots" />
+  <Navbar client:load activeLink='tarots' />
   <Divider />
   <main
-    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
+    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-12'
   >
     <header class='my-12 max-w-4xl mx-auto'>
       <h2
@@ -29,19 +30,22 @@ const mappedCardData = cards.map((data) => {
         Major Arcana
       </h2>
       <p>
-        Within this catalogue of tarot cards, you may examine each card's design and interpretation, as well as the keywords which are often associated with it. 
-        Each tarot card listed within the catalogue may appear after the quiz or during a reading.
+        Within this catalogue of tarot cards, you may examine each card's design
+        and interpretation, as well as the keywords which are often associated
+        with it. Each tarot card listed within the catalogue may appear after
+        the quiz or during a reading.
       </p>
     </header>
     <Divider />
     <section class='tarot-grid text-center grid max-w-6xl gap-12 mx-auto my-16'>
-      {mappedCardData.map(card => {
-        return (
-          <TarotCardButton info={card} client:load />
-        )
-      })}
+      {
+        mappedCardData.map((card) => {
+          return <TarotCardButton info={card} client:load />;
+        })
+      }
     </section>
     <Divider />
   </main>
+  <Footer />
   <TarotDialog client:load />
 </Layout>

@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.jsx';
 import Divider from '../components/Divider.jsx';
 import Quiz from '@components/Quiz.jsx';
+import Footer from '@components/Footer.jsx';
 
 import quiz from '@content/json/quiz.json';
 
@@ -13,7 +14,7 @@ import '../styles/init.css';
   <Navbar client:load activeLink='quiz' />
   <Divider />
   <main
-    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-24'
+    class='bg-palette-c-dark text-palette-c-light mx-auto sm:text-2xl px-4 sm:px-8 mb-6'
   >
     <header class='my-12 max-w-4xl mx-auto'>
       <h2
@@ -39,4 +40,8 @@ import '../styles/init.css';
       <Quiz client:load quiz={quiz} />
     </section>
   </main>
+  <div class='mb-12'>
+    <Divider />
+  </div>
+  <Footer />
 </Layout>
