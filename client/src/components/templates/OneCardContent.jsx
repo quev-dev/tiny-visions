@@ -9,6 +9,7 @@ export default function OneCardContent({
   reading = '',
   reverse = '',
   keywords = '',
+  showDisclaimer = true,
 }) {
   useEffect(() => {
     import('aos').then((AOS) => {
@@ -24,9 +25,11 @@ export default function OneCardContent({
           {title}
         </h3>
       </div>
-      <div className='my-8 md:my-12'>
-        <Divider />
-      </div>
+      {showDisclaimer && (
+        <div className='my-8 md:my-12'>
+          <Divider />
+        </div>
+      )}
       <section
         data-aos='fade-right'
         data-aos-once={true}
@@ -50,23 +53,27 @@ export default function OneCardContent({
       >
         <p>{reading}</p>
       </section>
-      <div className='my-8 md:my-12'>
-        <Divider />
-      </div>
-      <section
-        data-aos='fade-right'
-        data-aos-once={true}
-        className='flex flex-col gap-2'
-      >
-        <Disclaimer />
-        <p>
-          - Learn more about
-          <a className='text-palette-c-accent' href={`tarots/${title}`}>
-            {' ' + title}
-          </a>
-          .
-        </p>
-      </section>
+      {showDisclaimer && (
+        <div>
+          <div className='my-8 md:my-12'>
+            <Divider />
+          </div>
+          <section
+            data-aos='fade-right'
+            data-aos-once={true}
+            className='flex flex-col gap-2'
+          >
+            <Disclaimer />
+            <p className='p-4 bg-palette-c-darker rounded-md'>
+              Learn more about{' '}
+              <a className='text-palette-c-accent' href='/tarots'>
+                {title}
+              </a>
+              .
+            </p>
+          </section>
+        </div>
+      )}
     </article>
   );
 }

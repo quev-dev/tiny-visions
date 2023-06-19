@@ -6,11 +6,19 @@ import QuizResults from '@components/QuizResults.jsx'
 
 import quiz from '@content/json/quiz.json';
 
+const cards = await Astro.glob('../../content/markdown/cards/*.md');
+const mappedCardData = cards.map((data) => {
+  return {
+    frontmatter: data.frontmatter,
+    content: data.rawContent(),
+  };
+});
+
 import '@src/styles/init.css';
 ---
 
 <Layout title='Tiny Visions - Quiz Results'>
   <Navbar client:load activeLink="quiz" />
   <Divider/>
-  <QuizResults client:only quiz={quiz} />
+  <QuizResults client:only quiz={quiz} cardData={mappedCardData} />
 </Layout>

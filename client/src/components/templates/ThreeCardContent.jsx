@@ -64,25 +64,13 @@ export default function ThreeCardContent({ cardsToDisplay }) {
         className='flex flex-col gap-4'
       >
         <Disclaimer />
-        <p>
-          If you'd like to learn more about each of the cards you received, you
-          can follow one of the links below for more details.
+        <p className='p-4 bg-palette-c-darker rounded-md'>
+          If you'd like to learn more about each card, you can visit the{' '}
+          <a className='text-palette-c-accent' href='/tarots'>
+            tarots
+          </a>{' '}
+          collection.
         </p>
-        <ul>
-          {cardsToDisplay.map((card) => (
-            <li key={card.frontmatter.title}>
-              <p>
-                -{' '}
-                <a
-                  className='text-palette-c-accent'
-                  href={`tarots/${card.frontmatter.title}`}
-                >
-                  {card.frontmatter.title}
-                </a>
-              </p>
-            </li>
-          ))}
-        </ul>
       </aside>
     </article>
   );
