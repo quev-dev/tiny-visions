@@ -21,7 +21,10 @@ export default function Title() {
           </a>
           .
         </p>
-        <div className='absolute right-0 top-0 bottom-0 my-auto -z-10 w-64 h-64 bg-palette-c-mid md:-mr-32'></div>
+        <div
+          id='title-image'
+          className='absolute right-0 top-0 bottom-0 my-auto -z-10 w-64 h-64 bg-palette-c-mid md:-mr-32'
+        ></div>
       </article>
     </header>
   );

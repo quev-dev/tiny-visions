@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import CardPlaceholder from './CardPlaceholder.jsx';
+import TarotCard from '@components/TarotCard.jsx';
 import Divider from '../Divider.jsx';
 import Disclaimer from '../other/Disclaimer.jsx';
 import 'aos/dist/aos.css';
@@ -19,8 +19,14 @@ export default function OneCardContent({
 
   return (
     <article className='flex flex-col gap-4'>
-      <div data-aos='fade-right' data-aos-once={true} className='text-center'>
-        <CardPlaceholder />
+      <div
+        data-aos='fade-right'
+        data-aos-once={true}
+        className='text-center flex flex-col items-center justify-center'
+      >
+        <div className='p-4 bg-palette-c-darker'>
+          <TarotCard title={title} />
+        </div>
         <h3 className='text-xl md:text-3xl mt-4 text-palette-c-accent'>
           {title}
         </h3>

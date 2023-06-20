@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import CardPlaceholder from './CardPlaceholder.jsx';
+import TarotCard from '@components/TarotCard.jsx';
 import Divider from '../Divider.jsx';
 import Disclaimer from '../other/Disclaimer.jsx';
 import 'aos/dist/aos.css';
@@ -22,12 +22,14 @@ export default function ThreeCardContent({ cardsToDisplay }) {
               <div
                 data-aos='fade-right'
                 data-aos-once={true}
-                className='text-center flex flex-col gap-2'
+                className='text-center flex flex-col items-center justify-center gap-2'
               >
                 <h2 className='text-lg md:text-2xl font-bold'>
                   {index === 0 ? 'Past' : index === 1 ? 'Present' : 'Future'}
                 </h2>
-                <CardPlaceholder />
+                <div className='p-4 bg-palette-c-darker max-w-max'>
+                  <TarotCard title={card.frontmatter.title} />
+                </div>
                 <h3 className='text-xl md:text-3xl mt-4 text-palette-c-accent'>
                   {card.frontmatter.title}
                 </h3>

@@ -3,6 +3,7 @@ import ImgPlaceholder from '../../components/templates/ImgPlaceholder.jsx';
 import 'aos/dist/aos.css';
 
 export default function CardArticle({
+  id = '',
   title = 'title',
   link = '/',
   description = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur molestias ipsa sed soluta vitae asperiores nulla porro, corrupti praesentium quam nemo eum enim, optio voluptatum non quaerat reiciendis libero similique!',

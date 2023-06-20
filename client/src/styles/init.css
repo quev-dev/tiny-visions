@@ -17,13 +17,8 @@ body {
 }
 
 html {
-  /* Firefox */
   scrollbar-color: var(--cAccent) var(--cDarker);
   scrollbar-width: thin;
-
-  /* WebKit */
-  scrollbar-width: thin;
-  scrollbar-color: var(--cAccent) var(--cDarker);
 }
 html::-webkit-scrollbar {
   background-color: var(--cDarker);
