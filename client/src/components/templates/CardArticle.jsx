@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import ImgPlaceholder from '../../components/templates/ImgPlaceholder.jsx';
+import TarotLink from '@components/TarotLink.jsx';
 import 'aos/dist/aos.css';
 
 export default function CardArticle({
@@ -25,15 +26,13 @@ export default function CardArticle({
       ${reverse ? 'md:flex-row-reverse' : 'md:flex-row'}
       my-16 gap-24 justify-center items-center px-4 sm:px-12 sm:text-2xl`}
     >
-      <section className='max-w-2xl'>
+      <section className='max-w-2xl md:w-2/3'>
         <p>{description}</p>
       </section>
       <section className='card-article-link relative'>
         <a href={link}>
-          <ImgPlaceholder></ImgPlaceholder>
-          <p className='absolute z-10 bottom-4 text-center bg-opacity-70 w-full'>
-            {title}
-          </p>
+          <TarotLink id={id} />
+          <p className='absolute z-10 bottom-4 text-center w-full'>{title}</p>
         </a>
       </section>
     </article>

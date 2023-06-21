@@ -2,7 +2,7 @@ import Divider from './Divider';
 export default function Footer() {
   return (
     <footer className='flex flex-col'>
-      <aside className='p-8 rounded-md max-w-5xl mx-auto bg-palette-c-darker'>
+      <aside className='p-8 md:rounded-md max-w-5xl mx-auto bg-palette-c-darker'>
         <p>
           You can use the link below to visit the GitHub repository for this
           project.

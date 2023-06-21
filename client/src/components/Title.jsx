@@ -1,3 +1,5 @@
+import TarotLink from './TarotLink';
+
 export default function Title() {
   return (
     <header className='flex relative gap-12 justify-center my-8 py-8 px-4 sm:px-12 items-center sm:text-2xl md:mr-32'>
@@ -21,10 +23,9 @@ export default function Title() {
           </a>
           .
         </p>
-        <div
-          id='title-image'
-          className='absolute right-0 top-0 bottom-0 my-auto -z-10 w-64 h-64 bg-palette-c-mid md:-mr-32'
-        ></div>
+        <div className='absolute right-0 -top-8 md:-top-12 bottom-0 my-auto -z-10 md:-mr-32'>
+          <TarotLink id='title-image' />
+        </div>
       </article>
     </header>
   );
