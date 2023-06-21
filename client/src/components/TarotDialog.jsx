@@ -29,7 +29,7 @@ export default function TarotDialog() {
       }}
     >
       <div
-        className='my-12 max-w-5xl sm:text-2xl flex items-center justify-center gap-12'
+        className='my-12 max-w-5xl sm:text-2xl flex flex-col md:flex-row items-center justify-center gap-12'
         onClick={(e) => {
           e.stopPropagation();
         }}
@@ -50,8 +50,16 @@ export default function TarotDialog() {
           <p className='mb-6'>{$dialogContent?.content}</p>
           <Divider />
         </section>
-        <section className='min-w-[270px] min-h-[489px]'>
+        <section className='min-w-[270px] min-h-[489px] md:translate-y-5 flex flex-col items-center justify-center gap-8 md:gap-0'>
           <TarotCard title={$dialogContent?.frontmatter?.title} />
+          <button
+            className='bg-palette-c-accent rounded-md px-2 py-1 md:invisible'
+            onClick={() => {
+              dialogRef.current.close();
+            }}
+          >
+            Close
+          </button>
         </section>
       </div>
     </dialog>

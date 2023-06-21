@@ -1,14 +1,12 @@
 # Tiny Visions
 
-> _This web app is a work-in-progress. Not all features are complete, nor is the app yet deployed._
-
 ## Introduction
 
 **Tiny Visions** is a front-end web app aiming to create a simple, minimalistic experience for tarot card readings and quizzes.
 
-Within this site, the user may try out a quiz, as well as a one-card reading or three-card reading. They may also view a catalogue of each tarot card to view their artwork and meanings.
+Within this site, you may try out a quiz, as well as a one-card reading or three-card reading. You may also view a catalogue of each tarot card to view its artwork and interpretations.
 
-You may explore the live version of Tiny Visions through [this link](#).
+> Link to live version: https://tiny-visions.netlify.app
 
 ## Pages
 
