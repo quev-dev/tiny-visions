@@ -11,9 +11,9 @@ export default function Footer() {
           className='text-palette-c-accent'
           target='_blank'
           rel='noreferrer'
-          href='https://github.com/quev-dev/simple-tarot'
+          href='https://github.com/quev-dev/tiny-visions'
         >
-          simple-tarot
+          tiny-visions
         </a>
       </aside>
       <div className='my-12'>
