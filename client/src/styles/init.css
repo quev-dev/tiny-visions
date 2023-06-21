@@ -53,7 +53,7 @@ input[type='check'] {
       rgba(199, 24, 132, 0.9),
       rgba(177, 0, 88, 0.95)
     ),
-    url('../../public/tarots/Death.png');
+    url('/tarots/Death.png');
   background-size: cover;
 }
 
@@ -64,7 +64,7 @@ input[type='check'] {
       rgba(255, 58, 179, 0.1),
       rgba(49, 23, 35, 0.8)
     ),
-    url('../../public/tarots/The\ Fool.png');
+    url('/tarots/The\ Fool.png');
   background-size: cover;
 }
 #home-link-readings {
@@ -74,7 +74,7 @@ input[type='check'] {
       rgba(255, 58, 179, 0.05),
       rgba(54, 29, 41, 0.5)
     ),
-    url('../../public/tarots/The\ Sun.png');
+    url('/tarots/The\ Sun.png');
   background-size: cover;
 }
 #home-link-tarots {
@@ -84,6 +84,6 @@ input[type='check'] {
       rgba(255, 58, 179, 0.1),
       rgba(65, 40, 53, 0.8)
     ),
-    url('../../public/tarots/The\ World.png');
+    url('/tarots/The\ World.png');
   background-size: cover;
 }

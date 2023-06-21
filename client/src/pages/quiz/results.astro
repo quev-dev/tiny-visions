@@ -5,7 +5,7 @@ import Divider from '@components/Divider.jsx';
 import QuizResults from '@components/QuizResults.jsx';
 import Footer from '@components/Footer.jsx';
 
-import quiz from '@content/json/quiz.json';
+import quiz from '../../json/quiz.json';
 
 const cards = await Astro.glob('../../content/markdown/cards/*.md');
 const mappedCardData = cards.map((data) => {
